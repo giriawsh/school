@@ -1,0 +1,1354 @@
+--------- beginning of crash
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: FATAL EXCEPTION: main
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: Process: com.huawei.phoneservice, PID: 2417
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider com.huawei.phoneservice.oobe.OobePrivacyProvider: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (Sqlite code 14 SQLITE_CANTOPEN): Could not open database, (OS error - 2:No such file or directory)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7257)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:6792)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6685)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.app.ActivityThread.access$2000(ActivityThread.java:259)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2028)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7586)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (Sqlite code 14 SQLITE_CANTOPEN): Could not open database, (OS error - 2:No such file or directory)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:226)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:210)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:552)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:213)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:202)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:958)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:942)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:816)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:806)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:370)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:313)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at com.huawei.phoneservice.connection.db.SmartDatabaseHelper.b(Unknown Source:9)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at com.huawei.phoneservice.oobe.OobePrivacyProvider.onCreate(Unknown Source:4)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1949)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1923)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7252)
+05-11 20:43:23.769  2417  2417 E AndroidRuntime: 	... 10 more
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: FATAL EXCEPTION: main
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: Process: com.huawei.phoneservice, PID: 2465
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider com.huawei.phoneservice.oobe.OobePrivacyProvider: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (Sqlite code 14 SQLITE_CANTOPEN): Could not open database, (OS error - 2:No such file or directory)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7257)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:6792)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6685)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.app.ActivityThread.access$2000(ActivityThread.java:259)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2028)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7586)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (Sqlite code 14 SQLITE_CANTOPEN): Could not open database, (OS error - 2:No such file or directory)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:226)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:210)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:552)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:213)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:202)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:958)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:942)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:816)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:806)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:370)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:313)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at com.huawei.phoneservice.connection.db.SmartDatabaseHelper.b(Unknown Source:9)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at com.huawei.phoneservice.oobe.OobePrivacyProvider.onCreate(Unknown Source:4)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1949)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1923)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7252)
+05-11 20:43:23.902  2465  2465 E AndroidRuntime: 	... 10 more
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: FATAL EXCEPTION: main
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: Process: com.huawei.phoneservice, PID: 2513
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider com.huawei.phoneservice.oobe.OobePrivacyProvider: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (Sqlite code 14 SQLITE_CANTOPEN): Could not open database, (OS error - 2:No such file or directory)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7257)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:6792)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6685)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.app.ActivityThread.access$2000(ActivityThread.java:259)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2028)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7586)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (Sqlite code 14 SQLITE_CANTOPEN): Could not open database, (OS error - 2:No such file or directory)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:226)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:210)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:552)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:213)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:202)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:958)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:942)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:816)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:806)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:370)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:313)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at com.huawei.phoneservice.connection.db.SmartDatabaseHelper.b(Unknown Source:9)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at com.huawei.phoneservice.oobe.OobePrivacyProvider.onCreate(Unknown Source:4)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1949)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1923)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7252)
+05-11 20:43:24.081  2513  2513 E AndroidRuntime: 	... 10 more
+--------- beginning of system
+05-11 23:01:22.610 15552 15552 D ActivityThread: Attach thread to application
+05-11 23:01:22.610 14510 14651 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.qihoo.qvssdk.AntivirusEngineImpl.install:85 com.qihoo.qvssdk.AntivirusProviderImpl.install:123 com.huawei.systemmanager.antivirus.newengine.AntivirusScanHelper$ScanTask.call:58 
+05-11 23:01:22.729   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:24.730   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:25.629  1294  1546 I chatty  : uid=1000(system) PackageManager expire 32 lines
+05-11 23:01:25.640  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 28 lines
+05-11 23:01:25.659  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 19 lines
+05-11 23:01:25.680  1294  1294 I chatty  : uid=1000 system_server expire 32 lines
+05-11 23:01:25.727 13805 13979 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:25.729 13805 13903 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:25.848  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 13 lines
+05-11 23:01:25.879 15616 15616 D ActivityThread: Attach thread to application
+05-11 23:01:25.920 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.AntiVirusService.handleInstalledApkCheck:391 com.huawei.systemmanager.antivirus.AntiVirusService.onStartCommand:296 android.app.ActivityThread.handleServiceArgs:4316 
+05-11 23:01:25.973 14510 14544 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.qihoo.qvssdk.AntivirusEngineImpl.install:85 com.qihoo.qvssdk.AntivirusProviderImpl.install:123 com.huawei.systemmanager.antivirus.newengine.AntivirusScanHelper$ScanTask.call:58 
+05-11 23:01:26.737   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:26.739  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-11 23:01:26.741  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 25 lines
+05-11 23:01:26.832  1294  1509 I chatty  : uid=1000(system) ActivityManager expire 11 lines
+05-11 23:01:29.059   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:30.122 13805 13930 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:30.122 13805 13903 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:30.188  1294  1505 I chatty  : uid=1000(system) android.bg expire 20 lines
+05-11 23:01:30.260 13941 13941 I chatty  : uid=1000(system) com.huawei.systemmanager expire 8 lines
+05-11 23:01:30.272  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 10 lines
+05-11 23:01:30.333 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.AntiVirusService.handleInstalledApkCheck:391 com.huawei.systemmanager.antivirus.AntiVirusService.onStartCommand:296 android.app.ActivityThread.handleServiceArgs:4316 
+05-11 23:01:30.336  1294 14966 I chatty  : uid=1000(system) Binder:1294_1F expire 16 lines
+05-11 23:01:30.344 14510 14547 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.qihoo.qvssdk.AntivirusEngineImpl.install:85 com.qihoo.qvssdk.AntivirusProviderImpl.install:123 com.huawei.systemmanager.antivirus.newengine.AntivirusScanHelper$ScanTask.call:58 
+05-11 23:01:30.358  1294  2618 I chatty  : uid=1000(system) Binder:1294_A expire 18 lines
+05-11 23:01:30.370  1294  2203 I chatty  : uid=1000(system) Binder:1294_7 expire 15 lines
+05-11 23:01:30.398  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:31.429   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:34.022   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:36.030   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:36.031  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 26 lines
+05-11 23:01:36.856  1294  1546 I chatty  : uid=1000(system) PackageManager expire 34 lines
+05-11 23:01:36.892  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 48 lines
+05-11 23:01:36.901  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 24 lines
+05-11 23:01:36.923  1294  1294 I chatty  : uid=1000 system_server expire 48 lines
+05-11 23:01:36.964  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:36.987 13805 13930 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:36.988 13805 13940 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:37.064  1294  1448 I chatty  : uid=1000(system) Binder:1294_2 expire 21 lines
+05-11 23:01:37.074  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 10 lines
+05-11 23:01:37.087  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:37.196 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.AntiVirusService.handleInstalledApkCheck:391 com.huawei.systemmanager.antivirus.AntiVirusService.onStartCommand:296 android.app.ActivityThread.handleServiceArgs:4316 
+05-11 23:01:37.210 14510 14544 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.qihoo.qvssdk.AntivirusEngineImpl.install:85 com.qihoo.qvssdk.AntivirusProviderImpl.install:123 com.huawei.systemmanager.antivirus.newengine.AntivirusScanHelper$ScanTask.call:58 
+05-11 23:01:37.258  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:38.077   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:38.082  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-11 23:01:38.084  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 25 lines
+05-11 23:01:38.105  1294 12760 I chatty  : uid=1000(system) Binder:1294_1A expire 20 lines
+05-11 23:01:38.770  1294  9613 I chatty  : uid=1000(system) Binder:1294_14 expire 17 lines
+05-11 23:01:38.822  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:38.841 13805 13940 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:38.843 13805 13939 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:38.874  1294  2725 I chatty  : uid=1000(system) Binder:1294_E expire 10 lines
+05-11 23:01:38.944  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:39.011 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.AntiVirusService.handleInstalledApkCheck:391 com.huawei.systemmanager.antivirus.AntiVirusService.onStartCommand:296 android.app.ActivityThread.handleServiceArgs:4316 
+05-11 23:01:39.065  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:40.077   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:40.771 14510 14547 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.qihoo.qvssdk.AntivirusEngineImpl.install:85 com.qihoo.qvssdk.AntivirusProviderImpl.install:123 com.huawei.systemmanager.antivirus.newengine.AntivirusScanHelper$ScanTask.call:58 
+05-11 23:01:41.629   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-11 23:01:42.081   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:42.234  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:42.262 13805 13939 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:42.262 13805 14000 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:01:42.363  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:42.414 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.AntiVirusService.handleInstalledApkCheck:391 com.huawei.systemmanager.antivirus.AntiVirusService.onStartCommand:296 android.app.ActivityThread.handleServiceArgs:4316 
+05-11 23:01:42.434 14510 14544 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.qihoo.qvssdk.AntivirusEngineImpl.install:85 com.qihoo.qvssdk.AntivirusProviderImpl.install:123 com.huawei.systemmanager.antivirus.newengine.AntivirusScanHelper$ScanTask.call:58 
+05-11 23:01:42.479  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:01:44.085   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:46.093   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:01:46.095  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 12 lines
+05-11 23:02:20.638   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:02:20.641  1294  1532 I chatty  : uid=1000(system) android.fg expire 16 lines
+05-11 23:02:20.643  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 14 lines
+05-11 23:02:20.647  1294  1824 I chatty  : uid=1000(system) ConnectivitySer expire 16 lines
+05-11 23:02:20.663  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 13 lines
+05-11 23:02:20.667   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:02:20.675   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:02:20.791  5102  5102 D ActivityThread: Remove activity client record, r= ActivityRecord{81d3333 token=android.os.BinderProxy@dc36054 {com.huawei.appmarket/com.huawei.appmarket.MarketActivity}} token= android.os.BinderProxy@dc36054
+05-11 23:02:21.305  1294  1546 I chatty  : uid=1000(system) PackageManager expire 12 lines
+05-11 23:02:21.618  1294  1534 I chatty  : uid=1000(system) android.display expire 13 lines
+05-11 23:02:22.526  1294  1505 I chatty  : uid=1000(system) android.bg expire 11 lines
+05-11 23:02:45.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:02:45.660  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 18 lines
+05-11 23:02:45.690   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:02:46.670  1294  1907 I chatty  : uid=1000(system) LazyTaskWriterT expire 10 lines
+05-11 23:02:48.945  1294 10656 I chatty  : uid=1000(system) Binder:1294_16 expire 19 lines
+05-11 23:02:49.233  1294  2456 I chatty  : uid=1000(system) Binder:1294_9 expire 14 lines
+05-11 23:02:50.278  1294  1546 I chatty  : uid=1000(system) PackageManager expire 16 lines
+05-11 23:02:50.314  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 16 lines
+05-11 23:02:50.325  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:02:50.326  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 14 lines
+05-11 23:02:50.331  1294  1294 I chatty  : uid=1000 system_server expire 30 lines
+05-11 23:02:50.396  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 12 lines
+05-11 23:02:50.397 13805 13939 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:02:50.398 13805 13939 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-11 23:02:50.415 13941 13941 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.utils.AntiVirusTools.deleteVirusApk:740 com.huawei.systemmanager.antivirus.AntiVirusReceiver.handlerPackageRemoved:58 
+05-11 23:02:50.462  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:02:50.484 13941 13941 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.utils.AntiVirusTools.checkVirusForNewInstalledApk:728 com.huawei.systemmanager.antivirus.AntiVirusReceiver.onReceive:42 
+05-11 23:02:50.487 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.AntiVirusService.handleInstalledApkCheck:391 com.huawei.systemmanager.antivirus.AntiVirusService.onStartCommand:296 android.app.ActivityThread.handleServiceArgs:4316 
+05-11 23:02:50.496 14510 14547 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.qihoo.qvssdk.AntivirusEngineImpl.install:85 com.qihoo.qvssdk.AntivirusProviderImpl.install:123 com.huawei.systemmanager.antivirus.newengine.AntivirusScanHelper$ScanTask.call:58 
+05-11 23:02:50.509  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-11 23:02:50.537  1294 14966 I chatty  : uid=1000(system) Binder:1294_1F expire 11 lines
+05-11 23:02:50.783 14510 15877 W PackageParser: Problem in package /data/app/com.huawei.appmarket-9WtQK3r019ztOsOBeLZhqQ==/base.apk:
+05-11 23:02:50.783 14510 15877 W PackageParser: Unknown element under <activity>: intent-downloadFilter at /data/app/com.huawei.appmarket-9WtQK3r019ztOsOBeLZhqQ==/base.apk Binary XML file line #837
+05-11 23:04:08.567   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:04:26.639   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:04:26.654   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:04:26.658  1294  1520 I chatty  : uid=1000(system) batterystats-wo expire 10 lines
+05-11 23:04:51.642   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:04:51.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:04:51.658  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-11 23:04:52.434  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 18 lines
+05-11 23:05:54.639   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:05:54.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:05:54.666   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:06:41.653   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:06:41.687   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:06:41.688  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-11 23:07:21.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:07:21.659  1294  1532 I chatty  : uid=1000(system) android.fg expire 18 lines
+05-11 23:07:53.684   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:08:37.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:08:51.940   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:08:51.943  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 12 lines
+05-11 23:09:52.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:09:52.658  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-11 23:09:52.660  1294  1294 I chatty  : uid=1000 system_server expire 38 lines
+05-11 23:09:52.700   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:09:52.760  1294  1513 I chatty  : uid=1000(system) ActivityManager expire 12 lines
+05-11 23:09:52.760  1294  2049 I chatty  : uid=1000(system) MultiTaskManage expire 11 lines
+05-11 23:09:52.790 15925 15925 D ActivityThread: Attach thread to application
+05-11 23:09:52.848  1294  2618 I chatty  : uid=1000(system) Binder:1294_A expire 46 lines
+05-11 23:09:56.998  1294  1511 I chatty  : uid=1000(system) android.ui expire 84 lines
+05-11 23:09:57.023  1294  1537 I chatty  : uid=1000(system) PowerManagerSer expire 36 lines
+05-11 23:09:57.046  2073  7677 I chatty  : uid=1000(system) Binder:2073_9 expire 27 lines
+05-11 23:09:57.048  1933  2300 I PermissionManager: camera remind result:true
+05-11 23:09:57.049  1933  2300 I BackgroundPermManager: pkgName: com.android.systemui,pid: 1933 ,uidOf3RdApk: 10032 ,permType: 0 ,permCfg: 1
+05-11 23:09:57.049  1294  2365 I chatty  : uid=1000(system) android.fg expire 64 lines
+05-11 23:09:57.062  1294  1899 I chatty  : uid=1000(system) PhotonicModulat expire 10 lines
+05-11 23:09:57.149  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 33 lines
+05-11 23:09:57.171  1294  1820 I chatty  : uid=1000(system) WifiP2pService expire 17 lines
+05-11 23:09:57.172  1294  1785 I chatty  : uid=1000(system) WifiStateMachin expire 17 lines
+05-11 23:09:57.187   540 15969 D vold    : idle maintenance stopped
+05-11 23:09:57.194  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 46 lines
+05-11 23:09:57.198  1933  1933 W KeyguardViewMediator: notifyDrawn as: ScreenTurningOn 
+05-11 23:09:57.203  1294  1607 I chatty  : uid=1000(system) android.anim expire 25 lines
+05-11 23:09:57.218  1294  1819 I chatty  : uid=1000(system) WifiScanningSer expire 6 lines
+05-11 23:09:57.239  2073  3572 I chatty  : uid=1000(system) facerecognize expire 32 lines
+05-11 23:09:57.278  1294  1446 I chatty  : uid=1000(system) Binder:1294_1 expire 25 lines
+05-11 23:09:57.288  2163  2163 I Telephony-PstnPhoneCapabilitiesNotifier: handleVideoCapabilitesChanged. Video capability - false
+05-11 23:09:57.293  1294  1673 I chatty  : uid=1000(system) hw_finger_unloc expire 4 lines
+05-11 23:09:57.335  1294  1540 I chatty  : uid=1000(system) HwBinder:1294_1 expire 4 lines
+05-11 23:09:57.335  1294  1864 I chatty  : uid=1000(system) fingerprintServ expire 30 lines
+05-11 23:09:57.335  1933  1933 W FingerprintManager: Invalid acquired message: 6, 1100
+05-11 23:09:57.338  1933  1933 W FingerprintManager: Invalid acquired message: 6, 1105
+05-11 23:09:57.343  1294  3252 I chatty  : uid=1000(system) FingerViewContr expire 14 lines
+05-11 23:09:57.351 16002 16002 D ActivityThread: Attach thread to application
+05-11 23:09:57.354  1933  1933 W FingerprintManager: Invalid acquired message: 6, 1002
+05-11 23:09:57.354  1933  1933 W FingerprintManager: Invalid acquired message: 6, 1102
+05-11 23:09:57.359  2163  2163 I Telephony-PstnPhoneCapabilitiesNotifier: handleVideoCapabilitesChanged. Video capability - false
+05-11 23:09:57.505  2073  2251 I chatty  : uid=1000(system) HwBinder:2073_1 expire 6 lines
+05-11 23:09:57.505  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 12 lines
+05-11 23:09:57.688  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 10 lines
+05-11 23:09:57.781  1294  1719 I chatty  : uid=1000(system) HwBinder:1294_2 expire 6 lines
+05-11 23:09:57.799   540   551 D vold    : begin lockScreenPrepare
+05-11 23:09:57.799   540   551 D vold    : e4crypt_lock_screen_prepare flag is: 3 user_id:0
+05-11 23:09:57.800   540   551 D vold    : begin unlockUserScreenIsec
+05-11 23:09:57.800   540   551 D vold    : begin unlock_user_screen_isec auth_type: 2 uid: 0 token_present=0
+05-11 23:09:57.801   540   551 D vold    : flag is 3begin to unlock from HCCM
+05-11 23:09:57.801   540   551 D vold    : begin read_and_install_ece_sece_key0
+05-11 23:09:57.801   540   551 D vold    : begin read_key_from_vold 0
+05-11 23:09:57.801   540   551 D vold    : begin installKeyIsec
+05-11 23:09:57.802   540   551 D vold    : Added key 586241340 (ext4:f57c1717590d52bc) to keyring 916511949 in process 540
+05-11 23:09:57.802   540   551 D vold    : Added key 842747550 (f2fs:f57c1717590d52bc) to keyring 916511949 in process 540
+05-11 23:09:57.802   540   551 D vold    : Added key 781090656 (fscrypt:f57c1717590d52bc) to keyring 916511949 in process 540
+05-11 23:09:57.802   540   551 D vold    : begin installKeyIsec
+05-11 23:09:57.802   540   551 D vold    : Added key 719087868 (ext4:bfb0518f8097a306) to keyring 916511949 in process 540
+05-11 23:09:57.802   540   551 D vold    : Added key 560426124 (f2fs:bfb0518f8097a306) to keyring 916511949 in process 540
+05-11 23:09:57.802   540   551 D vold    : Added key 135083580 (fscrypt:bfb0518f8097a306) to keyring 916511949 in process 540
+05-11 23:09:57.802   540   551 D vold    : Created keys for user 0
+05-11 23:09:57.802   540   551 D vold    : unlock user screen success,begin to reset flag
+05-11 23:09:57.802  1933  1933 W KeyguardViewMediator: kgsvc callback -> .keyguardGoingAway 4 false false
+05-11 23:09:57.837  1294  1507 I chatty  : uid=1000(system) HwActivityManag expire 13 lines
+05-11 23:09:57.843  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 30 lines
+05-11 23:09:57.845  1933  1933 W KeyguardViewMediator: callback -> onShowingStateChanged.
+05-11 23:09:57.848  1933  2307 W KeyguardViewMediator: KgSvc reportKeyguardShowingChanged. cost = 3
+05-11 23:09:57.849  1294  1509 I chatty  : uid=1000(system) ActivityManager expire 10 lines
+05-11 23:09:57.902 16127 16127 D ActivityThread: Attach thread to application
+05-11 23:09:57.942  1933  2300 I BackgroundPermManager: pkgName: com.android.systemui,pid: 1933 ,uidOf3RdApk: 10032 ,permType: 0 ,permCfg: 0
+05-11 23:09:58.242   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:09:58.647  2060  2141 I HwLBSService.HwNLPDBManager: query loc Form Cell Table
+05-11 23:09:58.752  2060  2141 I chatty  : uid=1000(system) HwLocation identical 12 lines
+05-11 23:09:58.906  2060  2141 I HwLBSService.HwNLPDBManager: query loc Form Cell Table
+05-11 23:09:58.963  2060  2141 I HwLBSService.HwNLPDBManager: query loc Form Cell Table
+05-11 23:09:58.964  2060  2141 I HwLBSService.HwNLPDBManager: query loc Form Cell Table
+05-11 23:09:58.974  1294  2040 I chatty  : uid=1000(system) LocationThread expire 11 lines
+05-11 23:09:58.975  2060 16228 D HwLBSService.HwNLPDBManager:  refreshLocToCellTable start
+05-11 23:09:58.975  2060 16228 I HwLBSService.HwNLPDBManager: isCellIdExist
+05-11 23:09:58.976  2060 16228 I HwLBSService.HwNLPDBManager: is Not CellIdExist 
+05-11 23:09:58.976  2060 16228 I HwLBSService.HwNLPDBManager: tb_network count is 1
+05-11 23:09:58.976  2060 16228 D HwLBSService.HwNLPDBManager: cellid is not Exist, insert cellinfo to DB MAX_COLUMN : 1000,  dbsize : 1
+05-11 23:09:58.980  1294 16229 I chatty  : uid=1000 system_server expire 2 lines
+05-11 23:09:58.982  1294 16230 I chatty  : uid=1000 system_server expire 1 line
+05-11 23:10:02.611  1294  2203 I chatty  : uid=1000(system) Binder:1294_7 expire 19 lines
+05-11 23:10:04.350   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-11 23:10:04.578  1294  1717 I chatty  : uid=1000(system) InputReader expire 3 lines
+05-11 23:10:04.756  1294  1294 I chatty  : uid=1000 system_server expire 16 lines
+05-11 23:10:04.811  1294  2618 I chatty  : uid=1000(system) Binder:1294_A expire 22 lines
+05-11 23:10:04.822   540   551 D vold    : begin lockScreenPrepare
+05-11 23:10:04.822   540   551 D vold    : e4crypt_lock_screen_prepare flag is: 1 user_id:0
+05-11 23:10:04.826  1294 14966 I chatty  : uid=1000(system) Binder:1294_1F expire 20 lines
+05-11 23:10:04.869  1933  1933 W FingerprintManager: Invalid acquired message: 6, 1001
+05-11 23:10:05.014  1294  1844 I chatty  : uid=1000(system) Thread-6 expire 21 lines
+05-11 23:10:05.364  1933  1933 W KeyguardViewMediator: callback -> onShowingStateChanged.
+05-11 23:10:05.373  1933  2307 W KeyguardViewMediator: KgSvc reportKeyguardShowingChanged. cost = 9
+05-11 23:10:05.384  1294 16260 I chatty  : uid=1000 system_server expire 5 lines
+05-11 23:10:05.384   540   551 D vold    : begin getKeyDesc
+05-11 23:10:05.385   540   551 D vold    : begin getKeyDesc
+05-11 23:10:05.385   540   551 D vold    : begin getPrepareFlag
+05-11 23:10:05.385   540   551 D vold    : e4crypt_get_lock_screen_prepare_flag flag is: 1 user_id:0
+05-11 23:10:05.393   540   551 D vold    : begin lockUserScreenIsec
+05-11 23:10:05.393   540   551 D vold    : begin e4crypt_lock_user_screen_isec 0
+05-11 23:10:05.394   540   551 D vold    : e4crypt_lock_user_screen 0
+05-11 23:10:05.394   540   551 D vold    : evict_ece_key_from_keyring 0
+05-11 23:10:05.394   540   551 D vold    : revoke key with serial 586241340 ref ext4:f57c1717590d52bc
+05-11 23:10:05.394   540   551 D vold    : revoke key with serial 842747550 ref f2fs:f57c1717590d52bc
+05-11 23:10:05.394   540   551 D vold    : revoke key with serial 781090656 ref fscrypt:f57c1717590d52bc
+05-11 23:10:05.394   540   551 D vold    : evict_sece_pri_key_from_keyring 0
+05-11 23:10:05.394   540   551 D vold    : begin installKeyIsec
+05-11 23:10:05.394   540   551 D vold    : Added key 719087868 (ext4:bfb0518f8097a306) to keyring 916511949 in process 540
+05-11 23:10:05.394   540   551 D vold    : Added key 560426124 (f2fs:bfb0518f8097a306) to keyring 916511949 in process 540
+05-11 23:10:05.394   540   551 D vold    : Added key 135083580 (fscrypt:bfb0518f8097a306) to keyring 916511949 in process 540
+05-11 23:10:05.394   540   551 D vold    : lock_user_screen_isec result:1
+05-11 23:10:05.447  2073  2269 I chatty  : uid=1000(system) Binder:2073_4 expire 1 line
+05-11 23:10:05.611  1294  3247 I chatty  : uid=1000(system) HwDeviceUsageCo expire 5 lines
+05-11 23:10:38.653   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:10:38.654  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-11 23:11:22.826  1294  1850 I chatty  : uid=1000(system) ConnectivityThr expire 11 lines
+05-11 23:11:22.843  1294  1894 I chatty  : uid=1000(system) WifiProStateMac expire 4 lines
+05-11 23:11:22.867   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:11:23.761  1294  1446 I chatty  : uid=1000(system) Binder:1294_1 expire 16 lines
+05-11 23:12:58.640   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:12:58.655   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:12:58.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:12:58.663  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-11 23:13:21.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:13:21.672   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:13:52.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:13:52.657  1294  2618 I chatty  : uid=1000(system) Binder:1294_A expire 16 lines
+05-11 23:13:52.663  1294  2203 I chatty  : uid=1000(system) Binder:1294_7 expire 12 lines
+05-11 23:13:52.673  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 17 lines
+05-11 23:13:52.688   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:13:52.729 16273 16273 D ActivityThread: Attach thread to application
+05-11 23:13:53.147 16312 16312 D ActivityThread: Attach thread to application
+05-11 23:13:53.158 16323 16323 D ActivityThread: Attach thread to application
+05-11 23:13:53.415 16312 16312 D HwCustConnectivityManagerImpl: isBlockNetworkRequestByNonAis, INVALID_SUBSCRIPTION_ID
+05-11 23:15:20.663   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:15:20.665  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 26 lines
+05-11 23:15:20.669  1294  1532 I chatty  : uid=1000(system) android.fg expire 12 lines
+05-11 23:15:20.671  1294  2203 I chatty  : uid=1000(system) Binder:1294_7 expire 34 lines
+05-11 23:15:20.685   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:15:20.685  1294  1505 I chatty  : uid=1000(system) android.bg expire 35 lines
+05-11 23:15:20.721  1294  1294 I chatty  : uid=1000 system_server expire 11 lines
+05-11 23:15:20.726  1294  1778 I chatty  : uid=1000(system) NetworkPolicy expire 10 lines
+05-11 23:15:20.964 16312 16377 W PackageParser: Problem in package /data/user/0/com.huawei.appmarket/files/predl_com.huawei.appmarket_C27162.apk:
+05-11 23:15:20.964 16312 16377 W PackageParser: Unknown element under <activity>: intent-downloadFilter at /data/user/0/com.huawei.appmarket/files/predl_com.huawei.appmarket_C27162.apk Binary XML file line #837
+05-11 23:17:48.670   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:17:49.435  1294  1824 I chatty  : uid=1000(system) ConnectivitySer expire 10 lines
+05-11 23:18:52.668   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:51.641   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:51.641   614   748 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:51.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:51.658   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:51.688  1294  1820 I chatty  : uid=1000(system) WifiP2pService expire 12 lines
+05-11 23:23:51.705  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 18 lines
+05-11 23:23:51.710  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 18 lines
+05-11 23:23:51.722  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 10 lines
+05-11 23:23:51.727  1294  2637 I chatty  : uid=1000 system_server expire 16 lines
+05-11 23:23:51.728  1294  1294 I chatty  : uid=1000 system_server expire 57 lines
+05-11 23:23:51.731  1294  1824 I chatty  : uid=1000(system) ConnectivitySer expire 162 lines
+05-11 23:23:51.731  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 44 lines
+05-11 23:23:51.731   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:51.732  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 74 lines
+05-11 23:23:51.733  1294  1532 I chatty  : uid=1000(system) android.fg expire 19 lines
+05-11 23:23:51.756   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:51.758   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:51.761   788   788 I wificond: Pno scan started
+05-11 23:23:51.790  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 16 lines
+05-11 23:23:52.911   788   788 I wificond: Pno scan result ready event
+05-11 23:23:52.937   788   788 W wificond: Scan is not started. Ignore abort request
+05-11 23:23:53.103   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:53.103   614   743 I chatty  : uid=0(root) /system/bin/netd identical 2 lines
+05-11 23:23:53.103   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:53.208  1294  2203 I chatty  : uid=1000(system) Binder:1294_7 expire 14 lines
+05-11 23:23:53.248   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:53.255   788   788 I wificond: Pno scan stopped
+05-11 23:23:53.319   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:53.319   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:53.532   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:53.574 13805 13927 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.netassistant.wifisecure.HsmWifiDetectManager.handleWifiStateChangeEvent:147 com.huawei.netassistant.wifisecure.WifiStateReceiver.doInBackground:26 java.lang.reflect.Method.invoke:-2 
+05-11 23:23:53.618 16419 16419 D ActivityThread: Attach thread to application
+05-11 23:23:53.643 16432 16432 D ActivityThread: Attach thread to application
+05-11 23:23:53.691  1294  2043 I chatty  : uid=1000(system) NetworkTimeUpda expire 2 lines
+05-11 23:23:53.694  1294  9613 I chatty  : uid=1000(system) Binder:1294_14 expire 34 lines
+05-11 23:23:53.705 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.rainbow.client.background.service.CloudBroadcastHandlerService.startRainbowCommonService:121 com.huawei.systemmanager.rainbow.client.background.service.CloudBroadcastHandlerService.access$000:23 com.huawei.systemmanager.rainbow.client.background.service.CloudBroadcastHandlerService$1.onReceive:90 
+05-11 23:23:53.707  1294  2725 I chatty  : uid=1000(system) Binder:1294_E expire 47 lines
+05-11 23:23:53.715  1294  7044 I chatty  : uid=1000(system) Binder:1294_11 expire 16 lines
+05-11 23:23:53.758 16432 16432 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.library.stat.client.HsmStatProxy.bindService:276 com.huawei.library.stat.client.HsmStatProxy.access$000:34 com.huawei.library.stat.client.HsmStatProxy$1.handleMessage:67 
+05-11 23:23:53.761  1294 16411 I chatty  : uid=1000 system_server expire 2 lines
+05-11 23:23:53.768 16483 16483 D ActivityThread: Attach thread to application
+05-11 23:23:53.980  9614  9704 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1162 android.content.ContextWrapper.sendBroadcast:444 ey.a:73 ey.i:73 es.l:6 
+05-11 23:23:54.000 16312 16527 W PackageParser: Problem in package /data/app/com.huawei.appmarket-9WtQK3r019ztOsOBeLZhqQ==/base.apk:
+05-11 23:23:54.001 16312 16527 W PackageParser: Unknown element under <activity>: intent-downloadFilter at /data/app/com.huawei.appmarket-9WtQK3r019ztOsOBeLZhqQ==/base.apk Binary XML file line #837
+05-11 23:23:54.175  1294  1509 I chatty  : uid=1000(system) ActivityManager expire 10 lines
+05-11 23:23:54.183  1294  2048 I chatty  : uid=1000(system) GpsXtraReceiver expire 2 lines
+05-11 23:23:54.330   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:23:56.808 16432 16432 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 tmsdkobf.hj.bn:41 tmsdk.common.TMSDKContext.init:63 com.huawei.library.sdk.tmsdk.TMSdkEngine.init:55 
+05-11 23:23:56.826 16432 16432 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 tmsdk.common.TMSDKContext.init:214 com.huawei.library.sdk.tmsdk.TMSdkEngine.init:55 com.huawei.library.sdk.tmsdk.TMSdkEngine.initTMSDK:37 
+05-11 23:23:57.129  2073  2089 I chatty  : uid=1000(system) Binder:2073_3 expire 12 lines
+05-11 23:24:01.812  1294  1850 I chatty  : uid=1000(system) ConnectivityThr expire 10 lines
+05-11 23:24:13.114  2109  3361 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.hms.api.HuaweiApiClientImpl.f:558 com.huawei.hms.api.HuaweiApiClientImpl.connect:397 com.huawei.lcagent.service.process.push.PushTokenManager.connectPush:150 
+05-11 23:24:13.133  1294  2724 I chatty  : uid=1000(system) Binder:1294_D expire 15 lines
+05-11 23:24:13.135  1294  1448 I chatty  : uid=1000(system) Binder:1294_2 expire 24 lines
+05-11 23:25:00.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:25:00.657  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 68 lines
+05-11 23:25:00.666   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:25:02.264  1294  2725 I chatty  : uid=1000(system) Binder:1294_E expire 11 lines
+05-11 23:28:51.651   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:28:51.880  1294  1294 I chatty  : uid=1000 system_server expire 12 lines
+05-11 23:28:51.903   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:29:59.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:29:59.660  1294  1532 I chatty  : uid=1000(system) android.fg expire 26 lines
+05-11 23:30:00.120  2109  3361 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.hms.api.HuaweiApiClientImpl.f:558 com.huawei.hms.api.HuaweiApiClientImpl.connect:397 com.huawei.lcagent.service.process.push.PushTokenManager.connectPush:150 
+05-11 23:30:00.218  1294  1446 I chatty  : uid=1000(system) Binder:1294_1 expire 12 lines
+05-11 23:30:00.242   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.607  1294 16649 I chatty  : uid=1000 system_server expire 4 lines
+05-11 23:30:00.619  2073  7039 I chatty  : uid=1000(system) Binder:2073_8 expire 12 lines
+05-11 23:30:00.619  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 44 lines
+05-11 23:30:00.641  1294  1820 I chatty  : uid=1000(system) WifiP2pService expire 17 lines
+05-11 23:30:00.657   614   748 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.661   614   748 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.663   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.663   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.669   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.754   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.754   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.755   614   748 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.756   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.767  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 46 lines
+05-11 23:30:00.774   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.775   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.795   788   788 I wificond: Unsubscribe scan result for interface with index: 33
+05-11 23:30:00.796   788   788 W wificond: enter wifi_stop_supplicant ...
+05-11 23:30:00.796   788   788 W wificond: supplicant prop is null, wait at most 2 seconds for completion
+05-11 23:30:00.827  1294  1294 I chatty  : uid=1000 system_server expire 36 lines
+05-11 23:30:00.830  1294  2725 I chatty  : uid=1000(system) Binder:1294_E expire 10 lines
+05-11 23:30:00.928   614   748 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.967   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.979   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.980   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:00.996   659   659 E vendor.huawei.hardware.wifi@1.1-service: Failed to open directory: Permission denied
+05-11 23:30:00.996   659   659 E vendor.huawei.hardware.wifi@1.1-service: Error occurred while deleting old tombstone files
+05-11 23:30:00.996   659   659 E vendor.huawei.hardware.wifi@1.1-service: Error writing files to flash
+05-11 23:30:00.997   659   659 I vendor.huawei.hardware.wifi@1.1-service: Legacy HAL stop complete callback received
+05-11 23:30:01.201   659   659 I vendor.huawei.hardware.wifi@1.1-service: Wifi HAL stopped
+05-11 23:30:01.206  1294  1824 I chatty  : uid=1000(system) ConnectivitySer expire 37 lines
+05-11 23:30:01.212  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 20 lines
+05-11 23:30:01.222  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 22 lines
+05-11 23:30:01.258  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 27 lines
+05-11 23:30:01.290  1294  2637 I chatty  : uid=1000 system_server expire 4 lines
+05-11 23:30:01.293   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:01.303  1294 14966 I chatty  : uid=1000(system) Binder:1294_1F expire 11 lines
+05-11 23:30:01.328  1294  2456 I chatty  : uid=1000(system) Binder:1294_9 expire 17 lines
+05-11 23:30:01.350   659   659 I vendor.huawei.hardware.wifi@1.1-service: Wifi HAL started
+05-11 23:30:01.350   788   788 W wificond: enter StartSupplicant ...
+05-11 23:30:01.357   788   788 W wificond: wifi_start_supplicant try to wait start
+05-11 23:30:02.272   659   659 I vendor.huawei.hardware.wifi@1.1-service: Adding interface handle for wlan0
+05-11 23:30:02.272   659   659 I vendor.huawei.hardware.wifi@1.1-service: Adding interface handle for p2p0
+05-11 23:30:02.272   659   659 E vendor.huawei.hardware.wifi@1.1-service: Failed to register radio mode change callback
+05-11 23:30:02.272   659   659 I vendor.huawei.hardware.wifi@1.1-service: Configured chip in mode 0
+05-11 23:30:02.273   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:02.274   659   659 E vendor.huawei.hardware.wifi@1.1-service: Failed to set DFS flag; DFS channels may be unavailable.
+05-11 23:30:02.289   788   788 I wificond: create scanner for interface with index: 33
+05-11 23:30:02.289   788   788 I wificond: subscribe scan result for interface with index: 33
+05-11 23:30:02.292   788   788 E wificond: No Offload Service available
+05-11 23:30:02.292   788   788 I wificond: Offload HAL not supported 
+05-11 23:30:02.301   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:02.302   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-11 23:30:02.324  1294  7044 I chatty  : uid=1000(system) Binder:1294_11 expire 23 lines
+05-11 23:30:02.407   788   788 W wificond: No pno scan started
+05-11 23:30:02.407   788   788 W wificond: Scheduled scan is not running!
+05-11 23:30:02.414  1294  1785 I chatty  : uid=1000(system) WifiStateMachin expire 11 lines
+05-11 23:30:02.434  1294  1448 I chatty  : uid=1000(system) Binder:1294_2 expire 18 lines
+05-11 23:30:14.694   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-12 00:07:43.686  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 16 lines
+05-12 00:07:48.666  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 11 lines
+05-12 00:07:48.835  1294  1294 I chatty  : uid=1000 system_server expire 33 lines
+05-12 00:13:53.030  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 14 lines
+05-12 00:13:53.101  1294  9613 I chatty  : uid=1000(system) Binder:1294_14 expire 4 lines
+05-12 00:26:04.697  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 20 lines
+05-12 00:26:04.728  1294  1722 I chatty  : uid=1000(system) NetworkWatchlis expire 4 lines
+05-12 00:26:04.787  2149  3152 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 android.content.ContextWrapper.sendBroadcast:449 com.huawei.iaware.userhabit.NRTUserHabitTrainManager$NRTUserHabitHandler.handleTrain:444 com.huawei.iaware.userhabit.NRTUserHabitTrainManager$NRTUserHabitHandler.handleMessage:252 android.os.Handler.dispatchMessage:112 
+05-12 00:26:14.809  1294 16684 I chatty  : uid=1000 system_server expire 6 lines
+05-12 00:26:16.046   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 00:26:16.050  1294  1532 I chatty  : uid=1000(system) android.fg expire 15 lines
+05-12 00:26:22.894  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 11 lines
+05-12 00:26:44.771  1294  1294 I chatty  : uid=1000 system_server expire 29 lines
+05-12 00:26:47.919   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-12 00:26:47.920   786   982 I storaged: storaged_t::event: Pidm reported.
+05-12 00:26:47.920   786   982 E storaged: pid_info get_pids failed
+05-12 00:26:55.084  2073  3899 I chatty  : uid=1000(system) Binder:2073_7 expire 12 lines
+05-12 00:26:55.186  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 19 lines
+05-12 01:25:18.854  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 12 lines
+05-12 01:25:18.855  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 40 lines
+05-12 01:25:18.918  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 17 lines
+05-12 01:25:18.929  1294  2618 I chatty  : uid=1000(system) Binder:1294_A expire 13 lines
+05-12 01:25:18.933  1294  7045 I chatty  : uid=1000(system) Binder:1294_12 expire 28 lines
+05-12 01:25:18.938  1294 16722 I chatty  : uid=1000(system) Binder:1294_20 expire 63 lines
+05-12 01:25:18.949  1294  1505 I chatty  : uid=1000(system) android.bg expire 10 lines
+05-12 01:25:18.968  4672  4866 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.integration.data.IntentServiceNotify.sendResponse:91 com.huawei.decision.integration.data.IntentServiceNotify.send:66 com.huawei.decision.integration.data.IntentNotify.execute:47 
+05-12 01:25:18.969  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 20 lines
+05-12 01:25:18.988  1294  2049 I chatty  : uid=1000(system) MultiTaskManage expire 11 lines
+05-12 01:25:19.002 16728 16728 D ActivityThread: Attach thread to application
+05-12 01:25:19.126  1294  1509 I chatty  : uid=1000(system) ActivityManager expire 13 lines
+05-12 01:25:23.963  2073  7677 I chatty  : uid=1000(system) Binder:2073_9 expire 12 lines
+05-12 01:25:24.001 16776 16776 D ActivityThread: Attach thread to application
+05-12 01:25:24.191 16813 16813 D ActivityThread: Attach thread to application
+05-12 01:25:24.212  1294  2621 I chatty  : uid=1000(system) Binder:1294_B expire 23 lines
+05-12 01:25:27.272  2109  3361 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.hms.api.HuaweiApiClientImpl.f:558 com.huawei.hms.api.HuaweiApiClientImpl.connect:397 com.huawei.lcagent.service.process.push.PushTokenManager.connectPush:150 
+05-12 01:25:37.082  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 18 lines
+05-12 01:25:49.152  1294  1294 I chatty  : uid=1000 system_server expire 14 lines
+05-12 01:43:52.694  1294 12760 I chatty  : uid=1000(system) Binder:1294_1A expire 39 lines
+05-12 01:43:52.697  2073  7039 I chatty  : uid=1000(system) Binder:2073_8 expire 15 lines
+05-12 01:43:53.198  1294  1844 I chatty  : uid=1000(system) Thread-6 expire 10 lines
+05-12 03:19:45.976   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-12 03:19:46.106  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 30 lines
+05-12 03:19:46.126  1294  1294 I chatty  : uid=1000 system_server expire 16 lines
+05-12 03:19:46.158  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 19 lines
+05-12 03:19:48.158  1294  2000 I chatty  : uid=1000(system) watchdog expire 10 lines
+05-12 03:20:01.284  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 10 lines
+05-12 03:20:16.196  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 04:02:38.667  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 33 lines
+05-12 04:02:38.674  1294  1653 I chatty  : uid=1000(system) AlarmManager expire 2 lines
+05-12 04:02:38.792  1294  1513 I chatty  : uid=1000(system) ActivityManager expire 11 lines
+05-12 04:02:38.814 16868 16868 D ActivityThread: Attach thread to application
+05-12 04:02:38.906  1294 14966 I chatty  : uid=1000(system) Binder:1294_1F expire 10 lines
+05-12 04:02:38.924  2073  2569 I chatty  : uid=1000(system) Binder:2073_5 expire 12 lines
+05-12 04:28:52.654  1294  1624 I chatty  : uid=1000(system) UEventObserver expire 12 lines
+05-12 04:28:52.667  1294  2095 I chatty  : uid=1000(system) HwBinder:1294_4 expire 1 line
+05-12 05:13:52.682  1294  1294 I chatty  : uid=1000 system_server expire 13 lines
+05-12 05:13:52.775 16904 16904 D ActivityThread: Attach thread to application
+05-12 06:13:52.759  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 16 lines
+05-12 06:13:52.772  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 88 lines
+05-12 06:13:52.892  1294  7049 I chatty  : uid=1000(system) Binder:1294_13 expire 46 lines
+05-12 06:13:52.928  1294  1911 I chatty  : uid=1000(system) Binder:1294_4 expire 21 lines
+05-12 06:13:52.940  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 56 lines
+05-12 06:13:53.000 16945 16945 D ActivityThread: Attach thread to application
+05-12 06:13:53.013  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 51 lines
+05-12 06:13:53.026  1294  1446 I chatty  : uid=1000(system) Binder:1294_1 expire 11 lines
+05-12 06:13:53.254   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:13:53.254   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:13:53.255   614   748 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:13:53.291   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:13:53.315   788   788 I wificond: Unsubscribe scan result for interface with index: 33
+05-12 06:13:53.316   788   788 W wificond: enter wifi_stop_supplicant ...
+05-12 06:13:53.316   788   788 W wificond: supplicant prop is null, wait at most 2 seconds for completion
+05-12 06:13:53.328   659   659 E vendor.huawei.hardware.wifi@1.1-service: Failed to open directory: Permission denied
+05-12 06:13:53.328   659   659 E vendor.huawei.hardware.wifi@1.1-service: Error occurred while deleting old tombstone files
+05-12 06:13:53.328   659   659 E vendor.huawei.hardware.wifi@1.1-service: Error writing files to flash
+05-12 06:13:53.329   659   659 I vendor.huawei.hardware.wifi@1.1-service: Legacy HAL stop complete callback received
+05-12 06:13:53.531   659   659 I vendor.huawei.hardware.wifi@1.1-service: Wifi HAL stopped
+05-12 06:13:53.540   659   659 I vendor.huawei.hardware.wifi@1.1-service: Wifi HAL started
+05-12 06:13:53.542   788   788 W wificond: enter StartSupplicant ...
+05-12 06:13:53.542  1294  1820 I chatty  : uid=1000(system) WifiP2pService expire 16 lines
+05-12 06:13:53.546   788   788 W wificond: wifi_start_supplicant try to wait start
+05-12 06:28:54.514   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:54.517   659   659 I vendor.huawei.hardware.wifi@1.1-service: Adding interface handle for wlan0
+05-12 06:28:54.517   659   659 I vendor.huawei.hardware.wifi@1.1-service: Adding interface handle for p2p0
+05-12 06:28:54.517   659   659 E vendor.huawei.hardware.wifi@1.1-service: Failed to register radio mode change callback
+05-12 06:28:54.517   659   659 I vendor.huawei.hardware.wifi@1.1-service: Configured chip in mode 0
+05-12 06:28:54.520   659   659 E vendor.huawei.hardware.wifi@1.1-service: Failed to set DFS flag; DFS channels may be unavailable.
+05-12 06:28:54.533   788   788 I wificond: create scanner for interface with index: 33
+05-12 06:28:54.533   788   788 I wificond: subscribe scan result for interface with index: 33
+05-12 06:28:54.534   788   788 E wificond: No Offload Service available
+05-12 06:28:54.534   788   788 I wificond: Offload HAL not supported 
+05-12 06:28:54.542   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:54.543  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 104 lines
+05-12 06:28:54.543   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:54.607   788   788 W wificond: No pno scan started
+05-12 06:28:54.607   788   788 W wificond: Scheduled scan is not running!
+05-12 06:28:54.628  1294  2621 I chatty  : uid=1000(system) Binder:1294_B expire 18 lines
+05-12 06:28:54.629  1294 16992 I chatty  : uid=1000(system) IpClient.wlan0 expire 15 lines
+05-12 06:28:54.632   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:54.648  1294  1785 I chatty  : uid=1000(system) WifiStateMachin expire 8 lines
+05-12 06:28:54.656   788   788 I wificond: Pno scan started
+05-12 06:28:54.657  1294  1820 I chatty  : uid=1000(system) WifiP2pService expire 27 lines
+05-12 06:28:55.556  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 14 lines
+05-12 06:28:55.810   788   788 I wificond: Pno scan result ready event
+05-12 06:28:55.835   788   788 W wificond: Scan is not started. Ignore abort request
+05-12 06:28:55.837  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 26 lines
+05-12 06:28:55.987   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:55.987   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:56.006  1294  7049 I chatty  : uid=1000(system) Binder:1294_13 expire 40 lines
+05-12 06:28:56.010  1294  1532 I chatty  : uid=1000(system) android.fg expire 18 lines
+05-12 06:28:56.122   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:56.130   788   788 I wificond: Pno scan stopped
+05-12 06:28:56.134  1294  1509 I chatty  : uid=1000(system) ActivityManager expire 12 lines
+05-12 06:28:56.135  1294  1824 I chatty  : uid=1000(system) ConnectivitySer expire 129 lines
+05-12 06:28:56.140  1294  1294 I chatty  : uid=1000 system_server expire 34 lines
+05-12 06:28:56.201   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:56.205   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:56.412   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:56.468 13805 13932 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.netassistant.wifisecure.HsmWifiDetectManager.handleWifiStateChangeEvent:147 com.huawei.netassistant.wifisecure.WifiStateReceiver.doInBackground:26 java.lang.reflect.Method.invoke:-2 
+05-12 06:28:56.475  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 22 lines
+05-12 06:28:56.519 17000 17000 D ActivityThread: Attach thread to application
+05-12 06:28:56.600  1294 11436 I chatty  : uid=1000(system) Binder:1294_17 expire 40 lines
+05-12 06:28:56.602  1294  1778 I chatty  : uid=1000(system) NetworkPolicy expire 5 lines
+05-12 06:28:56.606 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.rainbow.client.background.service.CloudBroadcastHandlerService.startRainbowCommonService:121 com.huawei.systemmanager.rainbow.client.background.service.CloudBroadcastHandlerService.access$000:23 com.huawei.systemmanager.rainbow.client.background.service.CloudBroadcastHandlerService$1.onReceive:90 
+05-12 06:28:56.607  1294  2618 I chatty  : uid=1000(system) Binder:1294_A expire 37 lines
+05-12 06:28:56.609 17000 17000 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.library.stat.client.HsmStatProxy.bindService:276 com.huawei.library.stat.client.HsmStatProxy.access$000:34 com.huawei.library.stat.client.HsmStatProxy$1.handleMessage:67 
+05-12 06:28:56.659  1294 16993 I chatty  : uid=1000(system) NetworkMonitorN expire 2 lines
+05-12 06:28:56.678  1294  2040 I chatty  : uid=1000(system) LocationThread expire 7 lines
+05-12 06:28:56.898  9614  9704 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1162 android.content.ContextWrapper.sendBroadcast:444 ey.a:73 ey.i:73 es.l:6 
+05-12 06:28:57.207   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:28:57.408  4207 17075 E ActivityThread: Failed to find provider info for service_oversea_rom
+05-12 06:28:57.450 17076 17076 D ActivityThread: Attach thread to application
+05-12 06:28:57.594  1294  3246 I chatty  : uid=1000(system) ActivationMonit expire 12 lines
+05-12 06:28:59.654 17000 17000 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 tmsdkobf.hj.bn:41 tmsdk.common.TMSDKContext.init:63 com.huawei.library.sdk.tmsdk.TMSdkEngine.init:55 
+05-12 06:28:59.670 17000 17000 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 tmsdk.common.TMSDKContext.init:214 com.huawei.library.sdk.tmsdk.TMSdkEngine.init:55 com.huawei.library.sdk.tmsdk.TMSdkEngine.initTMSDK:37 
+05-12 06:29:00.044  2073  3899 I chatty  : uid=1000(system) Binder:2073_7 expire 10 lines
+05-12 06:29:00.234  4207 17189 E ActivityThread: Failed to find provider info for service_oversea_rom
+05-12 06:29:00.249   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-12 06:29:01.045  4207 17216 E ActivityThread: Failed to find provider info for service_oversea_rom
+05-12 06:29:02.854  1294  1505 I chatty  : uid=1000(system) android.bg expire 11 lines
+05-12 06:29:03.150  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 13 lines
+05-12 06:29:03.155  1294  1534 I chatty  : uid=1000(system) android.display expire 11 lines
+05-12 06:33:51.653   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:33:51.655  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 18 lines
+05-12 06:33:51.897   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:33:51.978  1294  1824 I chatty  : uid=1000(system) ConnectivitySer expire 15 lines
+05-12 06:33:57.417  2109  3361 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.hms.api.HuaweiApiClientImpl.f:558 com.huawei.hms.api.HuaweiApiClientImpl.connect:397 com.huawei.lcagent.service.process.push.PushTokenManager.connectPush:150 
+05-12 06:38:52.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:38:52.686  1294  1294 I chatty  : uid=1000 system_server expire 33 lines
+05-12 06:38:52.691   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:38:52.750  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 10 lines
+05-12 06:38:52.753 17231 17231 D ActivityThread: Attach thread to application
+05-12 06:38:53.087 17231 17231 D HwCustConnectivityManagerImpl: isBlockNetworkRequestByNonAis, INVALID_SUBSCRIPTION_ID
+05-12 06:43:51.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:43:51.692 17300 17300 D ActivityThread: Attach thread to application
+05-12 06:43:51.889  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 10 lines
+05-12 06:43:51.904   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:48:52.652  1294 16654 I chatty  : uid=1000(system) HwBinder:1294_5 expire 10 lines
+05-12 06:48:52.659   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:48:52.670  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 32 lines
+05-12 06:48:52.686   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:48:52.704  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 15 lines
+05-12 06:48:52.753 17323 17323 D ActivityThread: Attach thread to application
+05-12 06:48:52.769  4672  4866 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.integration.data.IntentServiceNotify.sendResponse:91 com.huawei.decision.integration.data.IntentServiceNotify.send:66 com.huawei.decision.integration.data.IntentNotify.execute:47 
+05-12 06:48:52.800  1294  1779 I chatty  : uid=1000(system) tworkPolicy.uid expire 3 lines
+05-12 06:48:52.801  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 11 lines
+05-12 06:48:52.842 17323 17323 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.hiwibd.android.trigger.HiWiTrigger.startIntentHiWiService:187 com.huawei.hiwibd.android.trigger.HiWiTrigger.startHiWiService:142 
+05-12 06:48:52.860  1294 16722 I chatty  : uid=1000(system) Binder:1294_20 expire 13 lines
+05-12 06:48:56.600  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 10 lines
+05-12 06:53:52.655   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:53:52.662  2109  3361 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.hms.api.HuaweiApiClientImpl.f:558 com.huawei.hms.api.HuaweiApiClientImpl.connect:397 com.huawei.lcagent.service.process.push.PushTokenManager.connectPush:150 
+05-12 06:53:52.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:53:52.728  1294  2621 I chatty  : uid=1000(system) Binder:1294_B expire 15 lines
+05-12 06:54:32.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:54:32.662  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 06:54:32.686   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:54:32.688  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 11 lines
+05-12 06:58:51.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:58:51.846   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 06:58:52.298  1294  1824 I chatty  : uid=1000(system) ConnectivitySer expire 11 lines
+05-12 06:58:52.300  1294  1850 I chatty  : uid=1000(system) ConnectivityThr expire 10 lines
+05-12 06:59:59.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:00:00.055   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:03:51.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:03:51.885  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 10 lines
+05-12 07:03:51.924   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:03:51.926  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 07:08:51.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:08:51.897   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:11:32.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:11:32.660  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 07:11:32.847   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:11:32.848  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 07:11:33.772   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:11:35.734  1294  1294 I chatty  : uid=1000 system_server expire 10 lines
+05-12 07:11:41.167  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 16 lines
+05-12 07:13:52.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:13:52.680  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 14 lines
+05-12 07:13:52.681   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:13:52.683  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 07:18:52.659   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:18:52.721   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:18:53.090   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-12 07:23:51.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:23:51.885  1294  1294 I chatty  : uid=1000 system_server expire 20 lines
+05-12 07:23:51.899   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:23:51.901  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 18 lines
+05-12 07:28:52.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:28:52.665  1294  1532 I chatty  : uid=1000(system) android.fg expire 13 lines
+05-12 07:28:52.701   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:28:52.769  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 10 lines
+05-12 07:33:51.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:33:51.898   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:33:51.912  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 13 lines
+05-12 07:38:52.666   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:38:52.671  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 13 lines
+05-12 07:38:52.680   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:38:52.744  1294 16722 I chatty  : uid=1000(system) Binder:1294_20 expire 10 lines
+05-12 07:43:52.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:43:52.673   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:48:52.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:48:52.659  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 07:48:52.690   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:53:52.661   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:53:52.694   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:53:52.755  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 11 lines
+05-12 07:58:52.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:58:52.661  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 07:58:52.679   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 07:58:52.682  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 08:00:35.664   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:03:52.673  1294  1863 I chatty  : uid=1000(system) GraphicsStats-d expire 1 line
+05-12 08:03:52.698   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:03:52.760  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 18 lines
+05-12 08:08:52.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:08:52.667   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:08:52.668  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 08:13:51.659   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:13:51.894   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:18:51.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:18:51.950   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:18:51.952  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 14 lines
+05-12 08:18:52.087  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 11 lines
+05-12 08:23:51.647  1294  1624 I chatty  : uid=1000(system) UEventObserver expire 12 lines
+05-12 08:23:51.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:23:51.892  1294 16722 I chatty  : uid=1000(system) Binder:1294_20 expire 10 lines
+05-12 08:23:51.897   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:23:51.899  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 08:23:51.966  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 17 lines
+05-12 08:28:52.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:28:52.665   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:33:52.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:33:52.684   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:38:52.670   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:38:52.671  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 12 lines
+05-12 08:38:52.674   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:43:51.655   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:43:51.922   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:48:52.655  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 13 lines
+05-12 08:48:52.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:48:52.700   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:48:52.703  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 08:48:52.705  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 08:48:52.713 17323 17323 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.hiwibd.android.trigger.HiWiTrigger.startIntentHiWiService:187 com.huawei.hiwibd.android.trigger.HiWiTrigger.startHiWiService:142 
+05-12 08:48:52.755  1294 16722 I chatty  : uid=1000(system) Binder:1294_20 expire 18 lines
+05-12 08:48:53.222  2109  3664 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 com.huawei.android.chr.statistics.TelStatusService.updateStatisticDB:772 com.huawei.android.chr.statistics.TelStatusService.triggerStatsReport:649 com.huawei.android.chr.statistics.TelStatusService.triggerAllStatsReport:666 com.huawei.android.chr.statistics.TelStatusManager.triggerAllStatsReport:447 
+05-12 08:48:53.333  2109  3664 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 com.huawei.android.chr.statistics.TelStatusService.updateStatisticDB:772 com.huawei.android.chr.statistics.TelStatusService.triggerStatsReport:649 com.huawei.android.chr.statistics.TelStatusService.triggerAllStatsReport:666 com.huawei.android.chr.statistics.TelStatusManager.triggerAllStatsReport:447 
+05-12 08:48:53.383  2109  3664 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 com.huawei.android.chr.statistics.TelStatusService.updateStatisticDB:772 com.huawei.android.chr.statistics.TelStatusService.triggerStatsReport:649 com.huawei.android.chr.statistics.TelStatusService.triggerAllStatsReport:666 com.huawei.android.chr.statistics.TelStatusManager.triggerAllStatsReport:447 
+05-12 08:53:52.659   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:53:52.665  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 20 lines
+05-12 08:53:52.670   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:53:52.730  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 10 lines
+05-12 08:58:52.666   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 08:58:52.678   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:03:51.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:03:51.661  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 09:03:51.912   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:03:51.915  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 17 lines
+05-12 09:08:51.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:08:51.926   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:13:51.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:13:51.821   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:13:51.822  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 16 lines
+05-12 09:13:51.823  1294  1532 I chatty  : uid=1000(system) android.fg expire 12 lines
+05-12 09:13:51.893  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 12 lines
+05-12 09:18:51.663   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:18:51.905  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 11 lines
+05-12 09:18:51.928  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 10 lines
+05-12 09:18:51.929   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:23:51.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:23:51.898   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:28:51.667   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:28:51.668  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 12 lines
+05-12 09:28:51.902   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:33:51.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:33:51.767   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:38:51.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:38:51.899   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:38:51.900  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 09:38:52.226  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 21 lines
+05-12 09:43:52.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:43:52.674   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:43:52.678  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 09:43:52.702  2109  3361 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.hms.api.HuaweiApiClientImpl.f:558 com.huawei.hms.api.HuaweiApiClientImpl.connect:397 com.huawei.lcagent.service.process.push.PushTokenManager.connectPush:150 
+05-12 09:43:52.703  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 20 lines
+05-12 09:48:52.663   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:48:52.665  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 09:48:52.697   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:53:52.646   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-12 09:53:52.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:53:52.668   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:58:52.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:58:52.659  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 09:58:52.692   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:59:34.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 09:59:35.237   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:03:51.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:03:51.900  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 14 lines
+05-12 10:03:51.905   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:03:51.908  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 12 lines
+05-12 10:03:51.909  1294  1532 I chatty  : uid=1000(system) android.fg expire 11 lines
+05-12 10:03:51.909  1294 16722 I chatty  : uid=1000(system) Binder:1294_20 expire 13 lines
+05-12 10:08:51.663   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:08:51.847   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:08:51.890  1294  1294 I chatty  : uid=1000 system_server expire 13 lines
+05-12 10:13:51.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:13:51.896   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:18:51.655   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:18:51.900   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:18:51.903  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 10:18:51.925  1294  2049 I chatty  : uid=1000(system) MultiTaskManage expire 10 lines
+05-12 10:18:51.944 17434 17434 D ActivityThread: Attach thread to application
+05-12 10:23:52.652  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 18 lines
+05-12 10:23:52.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:23:52.687   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:23:52.692  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 11 lines
+05-12 10:23:52.707  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 11 lines
+05-12 10:28:52.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:28:52.681   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:28:52.682  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 10:28:52.735  1294 16722 I chatty  : uid=1000(system) Binder:1294_20 expire 16 lines
+05-12 10:28:52.745  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 19 lines
+05-12 10:33:51.663   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:33:51.667  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 10:33:51.846   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:34:13.654   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:34:14.007   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:38:52.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:38:52.659  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 11 lines
+05-12 10:38:52.689   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:43:52.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:43:52.666   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:44:07.655   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:48:51.863   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:48:51.865  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 11 lines
+05-12 10:48:51.910  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 19 lines
+05-12 10:48:51.924 17323 17323 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.hiwibd.android.trigger.HiWiTrigger.startIntentHiWiService:187 com.huawei.hiwibd.android.trigger.HiWiTrigger.startHiWiService:142 
+05-12 10:48:52.002  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 15 lines
+05-12 10:53:51.664   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:53:51.667  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 10:53:51.897   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:58:52.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 10:58:52.682   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:03:52.659   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:03:52.660  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 11:03:52.690   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:08:51.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:08:51.895   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:13:52.665   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:13:52.703   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:13:52.704  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 11:18:52.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:18:52.660  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 11:18:52.673  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 10 lines
+05-12 11:18:52.695   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:18:52.699  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 16 lines
+05-12 11:23:51.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:23:51.900   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:23:51.901  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 11:24:28.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:24:29.897  1294  1509 I chatty  : uid=1000(system) ActivityManager expire 13 lines
+05-12 11:24:40.430  1294  1850 I chatty  : uid=1000(system) ConnectivityThr expire 6 lines
+05-12 11:28:52.648  1294  1624 I chatty  : uid=1000(system) UEventObserver expire 12 lines
+05-12 11:28:52.684  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 10 lines
+05-12 11:28:52.694   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:31:48.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:33:51.915   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:33:51.969  1294 16722 I chatty  : uid=1000(system) Binder:1294_20 expire 22 lines
+05-12 11:38:52.661   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:38:52.662  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 11:38:52.709   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:43:51.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:43:51.660  1294  1532 I chatty  : uid=1000(system) android.fg expire 13 lines
+05-12 11:43:51.897   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:43:51.969  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 32 lines
+05-12 11:43:52.998  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 11 lines
+05-12 11:44:08.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:48:52.677  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 12 lines
+05-12 11:48:52.680  1294  1294 I chatty  : uid=1000 system_server expire 51 lines
+05-12 11:48:52.687  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 11:48:52.697   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:53:52.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:53:52.671   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:58:33.646   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-12 11:58:33.659   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:58:34.291  1294  1824 I chatty  : uid=1000(system) ConnectivitySer expire 17 lines
+05-12 11:58:51.895   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 11:58:51.896  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 12:03:51.657   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:03:51.930   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:08:52.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:08:52.678   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:13:51.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:13:51.658  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 12 lines
+05-12 12:13:51.915   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:13:51.919  1294  1532 I chatty  : uid=1000(system) android.fg expire 19 lines
+05-12 12:18:51.659   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:18:51.899   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:23:51.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:23:51.929   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:23:51.932  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 22 lines
+05-12 12:23:51.987  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 10 lines
+05-12 12:28:51.665   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:28:51.927   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:28:51.990  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 11 lines
+05-12 12:28:53.064  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 13 lines
+05-12 12:28:57.651  1294 16992 I chatty  : uid=1000(system) IpClient.wlan0 expire 5 lines
+05-12 12:28:57.665  1294  1820 I chatty  : uid=1000(system) WifiP2pService expire 12 lines
+05-12 12:28:57.781  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 27 lines
+05-12 12:28:57.784  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 14 lines
+05-12 12:33:52.662  1294  2621 I chatty  : uid=1000(system) Binder:1294_B expire 24 lines
+05-12 12:33:52.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:33:52.677   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:33:52.729  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 11 lines
+05-12 12:33:52.740  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 11 lines
+05-12 12:38:52.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:38:52.734   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:43:51.659   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:43:51.905   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:44:08.662   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:48:52.689   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:48:52.690  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 10 lines
+05-12 12:48:52.696 17323 17323 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.hiwibd.android.trigger.HiWiTrigger.startIntentHiWiService:187 com.huawei.hiwibd.android.trigger.HiWiTrigger.startHiWiService:142 
+05-12 12:53:51.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:53:51.930   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:58:52.659   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 12:58:52.676   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:03:51.675   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:03:51.676  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 12 lines
+05-12 13:03:51.678  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 13:03:51.910  1294  2702 I chatty  : uid=1000(system) Binder:1294_C expire 23 lines
+05-12 13:03:51.928   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:03:51.931  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 10 lines
+05-12 13:03:51.941  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 15 lines
+05-12 13:06:12.658   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:06:12.722  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 21 lines
+05-12 13:06:13.784   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:06:15.734  1294  1294 I chatty  : uid=1000 system_server expire 24 lines
+05-12 13:06:24.209  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 16 lines
+05-12 13:06:41.862   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-12 13:08:52.659  1294  2621 I chatty  : uid=1000(system) Binder:1294_B expire 27 lines
+05-12 13:08:52.660   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:08:53.159  1294  2000 I chatty  : uid=1000(system) watchdog expire 10 lines
+05-12 13:09:15.644  1294  1511 I chatty  : uid=1000(system) android.ui expire 53 lines
+05-12 13:09:15.651  1294  1537 I chatty  : uid=1000(system) PowerManagerSer expire 17 lines
+05-12 13:09:15.656   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:15.667  1933  2300 I PermissionManager: camera remind result:true
+05-12 13:09:15.667  1933  2300 I BackgroundPermManager: pkgName: com.android.systemui,pid: 1933 ,uidOf3RdApk: 10032 ,permType: 0 ,permCfg: 1
+05-12 13:09:15.673  1294  2365 I chatty  : uid=1000(system) android.fg expire 16 lines
+05-12 13:09:15.722  1933  1933 W KeyguardViewMediator: notifyDrawn as: ScreenTurningOn 
+05-12 13:09:15.765  2073  3572 I chatty  : uid=1000(system) facerecognize expire 27 lines
+05-12 13:09:15.784  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 23 lines
+05-12 13:09:15.802   540 17559 D vold    : idle maintenance stopped
+05-12 13:09:15.804  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 27 lines
+05-12 13:09:15.814  1294  1505 I chatty  : uid=1000(system) android.bg expire 13 lines
+05-12 13:09:15.840  2163  2163 I Telephony-PstnPhoneCapabilitiesNotifier: handleVideoCapabilitesChanged. Video capability - false
+05-12 13:09:15.845  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 22 lines
+05-12 13:09:15.845  1294  1294 I chatty  : uid=1000 system_server expire 30 lines
+05-12 13:09:15.846  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 42 lines
+05-12 13:09:15.846  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 11 lines
+05-12 13:09:15.868  2163  2163 I Telephony-PstnPhoneCapabilitiesNotifier: handleVideoCapabilitesChanged. Video capability - false
+05-12 13:09:15.923   614   742 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:16.030  1294  2725 I chatty  : uid=1000(system) Binder:1294_E expire 1 line
+05-12 13:09:16.119  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 12 lines
+05-12 13:09:16.413  2073  2569 I chatty  : uid=1000(system) Binder:2073_5 expire 10 lines
+05-12 13:09:16.413   540   551 D vold    : begin lockScreenPrepare
+05-12 13:09:16.413   540   551 D vold    : e4crypt_lock_screen_prepare flag is: 4 user_id:0
+05-12 13:09:16.413   540   551 D vold    : begin unlockUserScreenIsec
+05-12 13:09:16.413   540   551 D vold    : begin unlock_user_screen_isec auth_type: 4 uid: 0 token_present=0
+05-12 13:09:16.413   540   551 D vold    : flag is 4begin to unlock from HCCM
+05-12 13:09:16.413   540   551 D vold    : begin read_and_install_ece_sece_key0
+05-12 13:09:16.413   540   551 D vold    : begin read_key_from_vold 0
+05-12 13:09:16.413   540   551 D vold    : begin installKeyIsec
+05-12 13:09:16.413   540   551 D vold    : Added key 50561185 (ext4:f57c1717590d52bc) to keyring 916511949 in process 540
+05-12 13:09:16.413   540   551 D vold    : Added key 889113500 (f2fs:f57c1717590d52bc) to keyring 916511949 in process 540
+05-12 13:09:16.413   540   551 D vold    : Added key 673458743 (fscrypt:f57c1717590d52bc) to keyring 916511949 in process 540
+05-12 13:09:16.413   540   551 D vold    : begin installKeyIsec
+05-12 13:09:16.413   540   551 D vold    : Added key 719087868 (ext4:bfb0518f8097a306) to keyring 916511949 in process 540
+05-12 13:09:16.414   540   551 D vold    : Added key 560426124 (f2fs:bfb0518f8097a306) to keyring 916511949 in process 540
+05-12 13:09:16.414   540   551 D vold    : Added key 135083580 (fscrypt:bfb0518f8097a306) to keyring 916511949 in process 540
+05-12 13:09:16.414   540   551 D vold    : Created keys for user 0
+05-12 13:09:16.414   540   551 D vold    : unlock user screen success,begin to reset flag
+05-12 13:09:16.509  1933  2300 I BackgroundPermManager: pkgName: com.android.systemui,pid: 1933 ,uidOf3RdApk: 10032 ,permType: 0 ,permCfg: 0
+05-12 13:09:16.849   614   743 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:16.982  2060  2141 I HwLBSService.HwNLPDBManager: query loc Form Cell Table
+05-12 13:09:17.034  2060  2141 I HwLBSService.HwNLPDBManager: query loc Form Cell Table
+05-12 13:09:17.041  2060 17618 D HwLBSService.HwNLPDBManager:  refreshLocToCellTable start
+05-12 13:09:17.042  2060 17618 I HwLBSService.HwNLPDBManager: isCellIdExist
+05-12 13:09:17.042  2060 17618 I HwLBSService.HwNLPDBManager: is Not CellIdExist 
+05-12 13:09:17.042  2060 17618 I HwLBSService.HwNLPDBManager: tb_network count is 1
+05-12 13:09:17.042  2060 17618 D HwLBSService.HwNLPDBManager: cellid is not Exist, insert cellinfo to DB MAX_COLUMN : 1000,  dbsize : 1
+05-12 13:09:17.045  1294 17619 I chatty  : uid=1000 system_server expire 2 lines
+05-12 13:09:17.051  1294 17620 I chatty  : uid=1000 system_server expire 1 line
+05-12 13:09:17.080  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 24 lines
+05-12 13:09:18.148  1933  1933 W KeyguardViewMediator: kgsvc callback -> .keyguardGoingAway 4 false false
+05-12 13:09:18.161  1294  2621 I chatty  : uid=1000(system) Binder:1294_B expire 28 lines
+05-12 13:09:18.186  1933  1933 W KeyguardViewMediator: callback -> onShowingStateChanged.
+05-12 13:09:18.188  1933  2307 W KeyguardViewMediator: KgSvc reportKeyguardShowingChanged. cost = 1
+05-12 13:09:18.193  1294  1864 I chatty  : uid=1000(system) fingerprintServ expire 14 lines
+05-12 13:09:18.232  1294  1820 I chatty  : uid=1000(system) WifiP2pService expire 11 lines
+05-12 13:09:18.245  1294  1720 I chatty  : uid=1000(system) HwBinder:1294_3 expire 11 lines
+05-12 13:09:19.089  1294  1515 I chatty  : uid=1000(system) ThirdAppHandler expire 12 lines
+05-12 13:09:20.101 16312 17649 D HwCustConnectivityManagerImpl: isBlockNetworkRequestByNonAis, INVALID_SUBSCRIPTION_ID
+05-12 13:09:20.675  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 24 lines
+05-12 13:09:20.918   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:20.925  1294  1532 I chatty  : uid=1000(system) android.fg expire 10 lines
+05-12 13:09:20.928  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 25 lines
+05-12 13:09:22.922   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:24.665  1294  2724 I chatty  : uid=1000(system) Binder:1294_D expire 17 lines
+05-12 13:09:24.926   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:26.930   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:28.783  1294  1511 I chatty  : uid=1000(system) android.ui expire 66 lines
+05-12 13:09:28.923  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 20 lines
+05-12 13:09:28.935   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:28.952  1294  1535 I chatty  : uid=1000(system) HwGameAssistant expire 10 lines
+05-12 13:09:28.972 13805 13845 I HwNetworkPolicyManager: getHwUidPolicy uid = 1000 policy = 0
+05-12 13:09:28.975  1294 17719 I chatty  : uid=1000 system_server expire 1 line
+05-12 13:09:28.981  1961  1961 V ActivityThread: callActivityOnCreate
+05-12 13:09:29.039  1961  1961 D ActivityThread: add activity client record, r= ActivityRecord{1fd30a0 token=android.os.BinderProxy@d8c1e0c {com.android.settings/com.android.settings.HWSettings}} token= android.os.BinderProxy@d8c1e0c
+05-12 13:09:29.043  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 android.content.ContextWrapper.sendBroadcast:449 com.android.settings.HWSettings.onResume:266 android.app.Instrumentation.callActivityOnResume:1426 android.app.Activity.performResume:7663 
+05-12 13:09:29.049  1294 12760 I chatty  : uid=1000(system) Binder:1294_1A expire 60 lines
+05-12 13:09:29.057  1294  9982 I chatty  : uid=1000(system) Binder:1294_15 expire 16 lines
+05-12 13:09:29.057  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.DecisionHelper.bindService:59 huawei.android.widget.RollbackRuleDetector.start:156 huawei.support.v7.widget.HwRecyclerView.onAttachedToWindow:211 
+05-12 13:09:29.197 17733 17733 D ActivityThread: Attach thread to application
+05-12 13:09:29.201  1294  1294 I chatty  : uid=1000 system_server expire 41 lines
+05-12 13:09:29.242  1933  8171 I CommandQueue: updateBarBgColor
+05-12 13:09:29.242  1933  8171 D CommandQueue: CommandQueue, setBarBackgroundColor
+05-12 13:09:29.251  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 10 lines
+05-12 13:09:29.251  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 10 lines
+05-12 13:09:29.274  1294  1446 I chatty  : uid=1000(system) Binder:1294_1 expire 24 lines
+05-12 13:09:29.573  1294  2204 I chatty  : uid=1000(system) Binder:1294_8 expire 13 lines
+05-12 13:09:29.705 17780 17780 D ActivityThread: Attach thread to application
+05-12 13:09:30.008   540   551 D sdlock  : poll
+05-12 13:09:30.009   540   551 I chatty  : uid=0(root) Binder:540_3 identical 1 line
+05-12 13:09:30.010   540   551 D sdlock  : poll
+05-12 13:09:30.938   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:30.939  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 34 lines
+05-12 13:09:30.940  1294  1532 I chatty  : uid=1000(system) android.fg expire 13 lines
+05-12 13:09:30.942  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 10 lines
+05-12 13:09:32.441  1294  1824 I chatty  : uid=1000(system) ConnectivitySer expire 14 lines
+05-12 13:09:32.608  1961  1961 V ActivityThread: callActivityOnCreate
+05-12 13:09:32.645  1961  1961 D ActivityThread: add activity client record, r= ActivityRecord{5f11fac token=android.os.BinderProxy@785e2a8 {com.android.settings/com.android.settings.Settings$HwSystemDashboardActivity}} token= android.os.BinderProxy@785e2a8
+05-12 13:09:32.655  1294 14966 I chatty  : uid=1000(system) Binder:1294_1F expire 12 lines
+05-12 13:09:32.668  1961  1961 E ActivityThread: Failed to find provider info for com.huawei.wildkids
+05-12 13:09:32.679  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.DecisionHelper.bindService:59 huawei.android.widget.RollbackRuleDetector.start:156 huawei.android.widget.ListView.onAttachedToWindow:185 
+05-12 13:09:32.680  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.DecisionHelper.bindService:59 huawei.android.widget.RollbackRuleDetector.start:156 huawei.support.v7.widget.HwRecyclerView.onAttachedToWindow:211 
+05-12 13:09:32.689  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 17 lines
+05-12 13:09:32.742  1294  1607 I chatty  : uid=1000(system) android.anim expire 37 lines
+05-12 13:09:35.146   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:09:38.213  2073  3899 I chatty  : uid=1000(system) Binder:2073_7 expire 10 lines
+05-12 13:09:39.018  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 13 lines
+05-12 13:09:39.035  1961  1961 V ActivityThread: callActivityOnCreate
+05-12 13:09:39.077  1961  1961 D ActivityThread: add activity client record, r= ActivityRecord{1ceb0fc token=android.os.BinderProxy@10f4904 {com.android.settings/com.android.settings.SubSettings}} token= android.os.BinderProxy@10f4904
+05-12 13:09:39.084  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 android.content.ContextWrapper.sendBroadcast:449 com.android.settings.DeviceInfoSettings.onResume:329 android.app.Fragment.performResume:2590 android.app.FragmentManagerImpl.moveToState:1346 
+05-12 13:09:39.091  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.DecisionHelper.bindService:59 huawei.android.widget.RollbackRuleDetector.start:156 huawei.android.widget.ListView.onAttachedToWindow:185 
+05-12 13:09:39.093  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.DecisionHelper.bindService:59 huawei.android.widget.RollbackRuleDetector.start:156 huawei.support.v7.widget.HwRecyclerView.onAttachedToWindow:211 
+05-12 13:09:42.357  1294 17859 I chatty  : uid=1000 system_server expire 1 line
+05-12 13:09:42.364  1294  1513 I chatty  : uid=1000(system) ActivityManager expire 10 lines
+05-12 13:09:42.375  1294  1511 I chatty  : uid=1000(system) android.ui expire 132 lines
+05-12 13:09:42.378 17860 17860 D ActivityThread: Attach thread to application
+05-12 13:09:42.384  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 37 lines
+05-12 13:09:42.387  1294  1507 I chatty  : uid=1000(system) HwActivityManag expire 17 lines
+05-12 13:09:42.387  1294 12760 I chatty  : uid=1000(system) Binder:1294_1A expire 60 lines
+05-12 13:09:42.408 13805 13845 I HwNetworkPolicyManager: getHwUidPolicy uid = 1000 policy = 0
+05-12 13:09:42.415 17860 17860 V ActivityThread: callActivityOnCreate
+05-12 13:09:42.421 17860 17860 D ActivityThread: add activity client record, r= ActivityRecord{1e55d4 token=android.os.BinderProxy@43fdb3c {android/com.android.internal.app.PlatLogoActivity}} token= android.os.BinderProxy@43fdb3c
+05-12 13:09:42.443  1933  1955 I CommandQueue: updateBarBgColor
+05-12 13:09:42.443  1933  1955 D CommandQueue: CommandQueue, setBarBackgroundColor
+05-12 13:09:42.672  1294  1509 I chatty  : uid=1000(system) ActivityManager expire 10 lines
+05-12 13:09:44.562  1294  1716 I chatty  : uid=1000(system) InputDispatcher expire 15 lines
+05-12 13:09:44.655 13805 13845 I HwNetworkPolicyManager: getHwUidPolicy uid = 1000 policy = 0
+05-12 13:09:44.657  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 android.content.ContextWrapper.sendBroadcast:449 com.android.settings.DeviceInfoSettings.onResume:329 android.app.Fragment.performResume:2590 android.app.FragmentManagerImpl.moveToState:1346 
+05-12 13:09:44.670  1933  1955 I CommandQueue: updateBarBgColor
+05-12 13:09:44.671  1933  1955 D CommandQueue: CommandQueue, setBarBackgroundColor
+05-12 13:09:45.011 17860 17860 D ActivityThread: Remove activity client record, r= ActivityRecord{1e55d4 token=android.os.BinderProxy@43fdb3c {android/com.android.internal.app.PlatLogoActivity}} token= android.os.BinderProxy@43fdb3c
+05-12 13:09:45.185  1294  1546 I chatty  : uid=1000(system) PackageManager expire 10 lines
+05-12 13:09:45.318  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 36 lines
+05-12 13:09:45.389  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-12 13:09:45.405 13941 13941 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.utils.AntiVirusTools.deleteVirusApk:740 com.huawei.systemmanager.antivirus.AntiVirusReceiver.handlerPackageRemoved:58 
+05-12 13:09:45.406  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 41 lines
+05-12 13:09:45.440  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-12 13:09:45.459 13941 13941 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.utils.AntiVirusTools.checkVirusForNewInstalledApk:728 com.huawei.systemmanager.antivirus.AntiVirusReceiver.onReceive:42 
+05-12 13:09:45.460 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.AntiVirusService.handleInstalledApkCheck:391 com.huawei.systemmanager.antivirus.AntiVirusService.onStartCommand:296 android.app.ActivityThread.handleServiceArgs:4316 
+05-12 13:09:45.487 17918 17918 D ActivityThread: Attach thread to application
+05-12 13:09:45.545 17918 17918 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.systemmanager.antivirus.ai.ArtificialIntelligenceManager.bindService:117 com.huawei.systemmanager.antivirus.ai.ArtificialIntelligenceManager.checkStatus:298 com.huawei.systemmanager.antivirus.AntiVirusScanService.onCreate:45 
+05-12 13:09:45.551 17918 17918 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.library.stat.client.HsmStatProxy.bindService:276 com.huawei.library.stat.client.HsmStatProxy.access$000:34 com.huawei.library.stat.client.HsmStatProxy$1.handleMessage:67 
+05-12 13:09:45.569  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 19 lines
+05-12 13:09:45.570 17918 17957 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.qihoo.qvssdk.AntivirusEngineImpl.install:85 com.qihoo.qvssdk.AntivirusProviderImpl.install:123 com.huawei.systemmanager.antivirus.newengine.AntivirusScanHelper$ScanTask.call:58 
+05-12 13:09:45.575 17918 17959 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 tmsdkobf.hj.bn:41 tmsdk.common.TMSDKContext.init:63 com.huawei.library.sdk.tmsdk.TMSdkEngine.init:55 
+05-12 13:09:45.589 17918 17959 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 tmsdk.common.TMSDKContext.init:214 com.huawei.library.sdk.tmsdk.TMSdkEngine.init:55 com.huawei.library.sdk.tmsdk.TMSdkEngine.initTMSDK:37 
+05-12 13:09:45.680  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-12 13:09:45.785 17918 17961 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.ACCESS_NETWORK_STATE in package: com.jingdong.app.mall at: Binary XML file line #18
+05-12 13:09:45.788 17918 17961 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.BLUETOOTH_ADMIN in package: com.jingdong.app.mall at: Binary XML file line #64
+05-12 13:09:45.789 17918 17961 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.SYSTEM_ALERT_WINDOW in package: com.jingdong.app.mall at: Binary XML file line #72
+05-12 13:09:46.556 16312 17649 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.ACCESS_NETWORK_STATE in package: com.jingdong.app.mall at: Binary XML file line #18
+05-12 13:09:46.557 16312 17649 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.BLUETOOTH_ADMIN in package: com.jingdong.app.mall at: Binary XML file line #64
+05-12 13:09:46.557 16312 17649 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.SYSTEM_ALERT_WINDOW in package: com.jingdong.app.mall at: Binary XML file line #72
+05-12 13:09:46.959 13805 13932 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-12 13:09:47.755 13805 13978 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-12 13:09:48.522 17918 18033 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1162 android.content.ContextWrapper.sendBroadcast:444 tmsdkobf.mi.a:55 tmsdkobf.mn$4$2$1.a:99 tmsdkobf.mi$1.a:438 
+05-12 13:10:00.001  1294  1294 I chatty  : uid=1000 system_server expire 10 lines
+05-12 13:10:09.375  1294  1537 I chatty  : uid=1000(system) PowerManagerSer expire 11 lines
+05-12 13:10:11.520  1294  1533 I chatty  : uid=1000(system) android.io expire 3 lines
+05-12 13:10:11.523  1961  1961 D ActivityThread: Remove activity client record, r= ActivityRecord{1ceb0fc token=android.os.BinderProxy@10f4904 {com.android.settings/com.android.settings.SubSettings}} token= android.os.BinderProxy@10f4904
+05-12 13:10:11.525  1294  2204 I chatty  : uid=1000(system) Binder:1294_8 expire 52 lines
+05-12 13:10:11.530  1961  1961 V ActivityThread: callActivityOnCreate
+05-12 13:10:11.560  1961  1961 D ActivityThread: add activity client record, r= ActivityRecord{1ceb0fc token=android.os.BinderProxy@10f4904 {com.android.settings/com.android.settings.SubSettings}} token= android.os.BinderProxy@10f4904
+05-12 13:10:11.566  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 android.content.ContextWrapper.sendBroadcast:449 com.android.settings.DeviceInfoSettings.onResume:329 android.app.Fragment.performResume:2590 android.app.FragmentManagerImpl.moveToState:1346 
+05-12 13:10:11.569  1294  9982 I chatty  : uid=1000(system) Binder:1294_15 expire 20 lines
+05-12 13:10:11.571  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.DecisionHelper.bindService:59 huawei.android.widget.RollbackRuleDetector.start:156 huawei.android.widget.ListView.onAttachedToWindow:185 
+05-12 13:10:11.572  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.DecisionHelper.bindService:59 huawei.android.widget.RollbackRuleDetector.start:156 huawei.support.v7.widget.HwRecyclerView.onAttachedToWindow:211 
+05-12 13:10:11.578  1294 13197 I chatty  : uid=1000(system) Binder:1294_1B expire 29 lines
+05-12 13:10:11.580  1294  7044 I chatty  : uid=1000(system) Binder:1294_11 expire 16 lines
+05-12 13:10:11.614  1294  1607 I chatty  : uid=1000(system) android.anim expire 15 lines
+05-12 13:10:12.191   786   982 I storaged: storaged_t::event: storage_info refreshed.
+05-12 13:10:13.018  1294  1624 I chatty  : uid=1000(system) UEventObserver expire 30 lines
+05-12 13:10:13.053  1933  1933 W PowerUI : unknown intent: Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x4000010 (has extras) }
+05-12 13:10:13.078   786  1627 I storaged: uid_monitor::update_curr_io_stats_locked: last_uid_io_stats_ size is 135
+05-12 13:10:13.078   786  1627 I storaged: uid_monitor::update_curr_io_stats_locked: curr_io_stats_ size is 135
+05-12 13:10:13.085  1294  1622 I chatty  : uid=1000(system) HwBatteryServic expire 3 lines
+05-12 13:10:13.092  2073  2244 I chatty  : uid=1000(system) OllieMain expire 10 lines
+05-12 13:10:13.150 18089 18089 D ActivityThread: Attach thread to application
+05-12 13:10:13.184  1294 14966 I chatty  : uid=1000(system) Binder:1294_1F expire 31 lines
+05-12 13:10:13.282 18089 18121 W DE J ImageProcessorAlgoImpl: [effect] initAlgoXmlPath() error! can't find xml
+05-12 13:10:13.405 18170 18170 D ActivityThread: Attach thread to application
+05-12 13:10:13.451  1294  1844 I chatty  : uid=1000(system) Thread-6 expire 10 lines
+05-12 13:10:13.517  1294 14889 I chatty  : uid=1000(system) Binder:1294_1E expire 14 lines
+05-12 13:10:13.576 18219 18219 D ActivityThread: Attach thread to application
+05-12 13:10:13.785  1961  1961 D ActivityThread: Remove activity client record, r= ActivityRecord{1ceb0fc token=android.os.BinderProxy@10f4904 {com.android.settings/com.android.settings.SubSettings}} token= android.os.BinderProxy@10f4904
+05-12 13:10:13.793  1961  1961 V ActivityThread: callActivityOnCreate
+05-12 13:10:13.841  1961  1961 D ActivityThread: add activity client record, r= ActivityRecord{1ceb0fc token=android.os.BinderProxy@10f4904 {com.android.settings/com.android.settings.SubSettings}} token= android.os.BinderProxy@10f4904
+05-12 13:10:13.851  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 android.content.ContextWrapper.sendBroadcast:449 com.android.settings.DeviceInfoSettings.onResume:329 android.app.Fragment.performResume:2590 android.app.FragmentManagerImpl.moveToState:1346 
+05-12 13:10:13.860  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.DecisionHelper.bindService:59 huawei.android.widget.RollbackRuleDetector.start:156 huawei.android.widget.ListView.onAttachedToWindow:185 
+05-12 13:10:13.861  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.huawei.decision.DecisionHelper.bindService:59 huawei.android.widget.RollbackRuleDetector.start:156 huawei.support.v7.widget.HwRecyclerView.onAttachedToWindow:211 
+05-12 13:10:13.918 18306 18306 D ActivityThread: Attach thread to application
+05-12 13:10:13.921  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:168 
+05-12 13:10:13.927  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:221 
+05-12 13:10:14.000  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:168 
+05-12 13:10:14.001  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:221 
+05-12 13:10:14.035 18219 18333 E ActivityThread: Failed to find provider info for service_oversea_rom
+05-12 13:10:14.089  1294  1294 I chatty  : uid=1000 system_server expire 29 lines
+05-12 13:10:14.199 18306 18306 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.hwdetectrepair.smartnotify.eventlistener.PowerConnectionReceiver.onReceive:39 android.app.ActivityThread.handleReceiver:4018 
+05-12 13:10:15.412  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 26 lines
+05-12 13:10:15.873  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 43 lines
+05-12 13:10:16.054   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:10:16.055  1294  1767 I chatty  : uid=1000(system) NetdConnector expire 12 lines
+05-12 13:10:16.058  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 21 lines
+05-12 13:10:16.059  1294  1777 I chatty  : uid=1000(system) NetworkStats expire 10 lines
+05-12 13:10:16.065  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 10 lines
+05-12 13:10:16.245 18453 18453 D ActivityThread: Attach thread to application
+05-12 13:10:16.408 18453 18473 W DE J ImageProcessorAlgoImpl: [effect] initAlgoXmlPath() error! can't find xml
+05-12 13:10:16.596 18219 18503 E ActivityThread: Failed to find provider info for service_oversea_rom
+05-12 13:10:16.916  3411  3411 E ActivityThread: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@1a87519 that was originally bound here
+05-12 13:10:16.916  3411  3411 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@1a87519 that was originally bound here
+05-12 13:10:16.916  3411  3411 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+05-12 13:10:16.916  3411  3411 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1702)
+05-12 13:10:16.916  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1899)
+05-12 13:10:16.916  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1852)
+05-12 13:10:16.916  3411  3411 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:698)
+05-12 13:10:16.916  3411  3411 E ActivityThread: 	at android.media.MediaScannerConnection.connect(MediaScannerConnection.java:119)
+05-12 13:10:16.916  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScan(DownloadScanner.java:130)
+05-12 13:10:16.916  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScanBlocking(DownloadScanner.java:85)
+05-12 13:10:16.916  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:447)
+05-12 13:10:16.922  3411  3411 E ActivityThread: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@4bc4fb7 that was originally bound here
+05-12 13:10:16.922  3411  3411 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@4bc4fb7 that was originally bound here
+05-12 13:10:16.922  3411  3411 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+05-12 13:10:16.922  3411  3411 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1702)
+05-12 13:10:16.922  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1899)
+05-12 13:10:16.922  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1852)
+05-12 13:10:16.922  3411  3411 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:698)
+05-12 13:10:16.922  3411  3411 E ActivityThread: 	at android.media.MediaScannerConnection.connect(MediaScannerConnection.java:119)
+05-12 13:10:16.922  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScan(DownloadScanner.java:130)
+05-12 13:10:16.922  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScanBlocking(DownloadScanner.java:85)
+05-12 13:10:16.922  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:447)
+05-12 13:10:16.924  3411  3411 E ActivityThread: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@5f315b4 that was originally bound here
+05-12 13:10:16.924  3411  3411 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@5f315b4 that was originally bound here
+05-12 13:10:16.924  3411  3411 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+05-12 13:10:16.924  3411  3411 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1702)
+05-12 13:10:16.924  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1899)
+05-12 13:10:16.924  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1852)
+05-12 13:10:16.924  3411  3411 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:698)
+05-12 13:10:16.924  3411  3411 E ActivityThread: 	at android.media.MediaScannerConnection.connect(MediaScannerConnection.java:119)
+05-12 13:10:16.924  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScan(DownloadScanner.java:130)
+05-12 13:10:16.924  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScanBlocking(DownloadScanner.java:85)
+05-12 13:10:16.924  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:447)
+05-12 13:10:16.925  3411  3411 E ActivityThread: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@7153dfd that was originally bound here
+05-12 13:10:16.925  3411  3411 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@7153dfd that was originally bound here
+05-12 13:10:16.925  3411  3411 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+05-12 13:10:16.925  3411  3411 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1702)
+05-12 13:10:16.925  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1899)
+05-12 13:10:16.925  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1852)
+05-12 13:10:16.925  3411  3411 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:698)
+05-12 13:10:16.925  3411  3411 E ActivityThread: 	at android.media.MediaScannerConnection.connect(MediaScannerConnection.java:119)
+05-12 13:10:16.925  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScan(DownloadScanner.java:130)
+05-12 13:10:16.925  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScanBlocking(DownloadScanner.java:85)
+05-12 13:10:16.925  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:447)
+05-12 13:10:16.927  3411  3411 E ActivityThread: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@8b05433 that was originally bound here
+05-12 13:10:16.927  3411  3411 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@8b05433 that was originally bound here
+05-12 13:10:16.927  3411  3411 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+05-12 13:10:16.927  3411  3411 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1702)
+05-12 13:10:16.927  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1899)
+05-12 13:10:16.927  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1852)
+05-12 13:10:16.927  3411  3411 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:698)
+05-12 13:10:16.927  3411  3411 E ActivityThread: 	at android.media.MediaScannerConnection.connect(MediaScannerConnection.java:119)
+05-12 13:10:16.927  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScan(DownloadScanner.java:130)
+05-12 13:10:16.927  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScanBlocking(DownloadScanner.java:85)
+05-12 13:10:16.927  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:447)
+05-12 13:10:16.928  3411  3411 E ActivityThread: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@9955a54 that was originally bound here
+05-12 13:10:16.928  3411  3411 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@9955a54 that was originally bound here
+05-12 13:10:16.928  3411  3411 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+05-12 13:10:16.928  3411  3411 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1702)
+05-12 13:10:16.928  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1899)
+05-12 13:10:16.928  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1852)
+05-12 13:10:16.928  3411  3411 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:698)
+05-12 13:10:16.928  3411  3411 E ActivityThread: 	at android.media.MediaScannerConnection.connect(MediaScannerConnection.java:119)
+05-12 13:10:16.928  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScan(DownloadScanner.java:130)
+05-12 13:10:16.928  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScanBlocking(DownloadScanner.java:85)
+05-12 13:10:16.928  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:447)
+05-12 13:10:16.929  3411  3411 E ActivityThread: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@d0365a7 that was originally bound here
+05-12 13:10:16.929  3411  3411 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@d0365a7 that was originally bound here
+05-12 13:10:16.929  3411  3411 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+05-12 13:10:16.929  3411  3411 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1702)
+05-12 13:10:16.929  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1899)
+05-12 13:10:16.929  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1852)
+05-12 13:10:16.929  3411  3411 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:698)
+05-12 13:10:16.929  3411  3411 E ActivityThread: 	at android.media.MediaScannerConnection.connect(MediaScannerConnection.java:119)
+05-12 13:10:16.929  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScan(DownloadScanner.java:130)
+05-12 13:10:16.929  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScanBlocking(DownloadScanner.java:85)
+05-12 13:10:16.929  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:447)
+05-12 13:10:16.931  3411  3411 E ActivityThread: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@d7ed01a that was originally bound here
+05-12 13:10:16.931  3411  3411 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.android.providers.downloads.DownloadJobService has leaked ServiceConnection android.media.MediaScannerConnection@d7ed01a that was originally bound here
+05-12 13:10:16.931  3411  3411 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+05-12 13:10:16.931  3411  3411 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1702)
+05-12 13:10:16.931  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1899)
+05-12 13:10:16.931  3411  3411 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1852)
+05-12 13:10:16.931  3411  3411 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:698)
+05-12 13:10:16.931  3411  3411 E ActivityThread: 	at android.media.MediaScannerConnection.connect(MediaScannerConnection.java:119)
+05-12 13:10:16.931  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScan(DownloadScanner.java:130)
+05-12 13:10:16.931  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadScanner.requestScanBlocking(DownloadScanner.java:85)
+05-12 13:10:16.931  3411  3411 E ActivityThread: 	at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:447)
+05-12 13:10:17.401 18219 18516 E ActivityThread: Failed to find provider info for service_oversea_rom
+05-12 13:10:17.559  1294  2618 I chatty  : uid=1000(system) Binder:1294_A expire 28 lines
+05-12 13:10:17.589  1294  1446 I chatty  : uid=1000(system) Binder:1294_1 expire 17 lines
+05-12 13:10:18.231  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 34 lines
+05-12 13:10:18.262   614   744 W SocketListener: sending broadcast to Pid = 1294, Uid = 1000 
+05-12 13:10:20.263  1294  1511 I chatty  : uid=1000(system) android.ui expire 58 lines
+05-12 13:10:20.317  1294  7045 I chatty  : uid=1000(system) Binder:1294_12 expire 41 lines
+05-12 13:10:20.820  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1162 android.content.ContextWrapper.sendBroadcast:444 com.android.settings.deviceinfo.UsbSettingsService$5.onClick:789 com.android.settings.deviceinfo.UsbSettingsService$DialogItemListener.onClick:845 com.android.internal.app.AlertController$AlertParams$3.onItemClick:1184 
+05-12 13:10:20.935  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:168 
+05-12 13:10:20.936  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:221 
+05-12 13:10:21.276  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:168 
+05-12 13:10:21.288  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:221 
+05-12 13:10:21.318  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:168 
+05-12 13:10:21.319  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.deviceinfo.UsbReceiver.startUsbService:322 com.android.settings.deviceinfo.UsbReceiver.onUsbStateReceive:221 
+05-12 13:10:22.130  1294 12760 I chatty  : uid=1000(system) Binder:1294_1A expire 13 lines
+05-12 13:10:25.021  1294  3270 I chatty  : uid=1000(system) HwUsbHDBManager expire 6 lines
+05-12 13:10:25.080  1933  1933 V ActivityThread: callActivityOnCreate
+05-12 13:10:25.088  1294  1534 I chatty  : uid=1000(system) android.display expire 11 lines
+05-12 13:10:25.100  1933  1933 D ActivityThread: add activity client record, r= ActivityRecord{ed0d698 token=android.os.BinderProxy@e1459de {com.android.systemui/com.android.systemui.usb.HwUsbDebuggingActivity}} token= android.os.BinderProxy@e1459de
+05-12 13:10:25.109  2073  3311 I chatty  : uid=1000(system) DollieAdapter expire 10 lines
+05-12 13:10:25.128  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 android.content.ContextWrapper.sendBroadcast:449 com.android.settings.DeviceInfoSettings.onResume:329 android.app.Fragment.performResume:2590 android.app.FragmentManagerImpl.moveToState:1346 
+05-12 13:10:25.139  2073  2572 I chatty  : uid=1000(system) DollieChrTh expire 10 lines
+05-12 13:10:31.756  1933  1933 D ActivityThread: Remove activity client record, r= ActivityRecord{ed0d698 token=android.os.BinderProxy@e1459de {com.android.systemui/com.android.systemui.usb.HwUsbDebuggingActivity}} token= android.os.BinderProxy@e1459de
+05-12 13:10:31.774  1294  1607 I chatty  : uid=1000(system) android.anim expire 44 lines
+05-12 13:10:31.778  1294  1446 I chatty  : uid=1000(system) Binder:1294_1 expire 33 lines
+05-12 13:10:31.783  1294  1505 I chatty  : uid=1000(system) android.bg expire 15 lines
+05-12 13:10:31.785  2073  7677 I chatty  : uid=1000(system) Binder:2073_9 expire 6 lines
+05-12 13:10:31.786  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 37 lines
+05-12 13:10:31.789 13805 13845 I HwNetworkPolicyManager: getHwUidPolicy uid = 10069 policy = 0
+05-12 13:10:31.846  1933 14400 I CommandQueue: updateBarBgColor
+05-12 13:10:31.846  1933 14400 D CommandQueue: CommandQueue, setBarBackgroundColor
+05-12 13:10:34.880  2073  2231 I chatty  : uid=1000(system) HwCommBoosterTh expire 18 lines
+05-12 13:10:34.996  1294  1507 I chatty  : uid=1000(system) HwActivityManag expire 10 lines
+05-12 13:10:34.996  1294  1511 I chatty  : uid=1000(system) android.ui expire 56 lines
+05-12 13:10:35.012  1294 12308 I chatty  : uid=1000(system) Binder:1294_19 expire 12 lines
+05-12 13:10:35.013  1294  2618 I chatty  : uid=1000(system) Binder:1294_A expire 33 lines
+05-12 13:10:35.024  1294 18581 I chatty  : uid=1000 system_server expire 1 line
+05-12 13:10:35.024  1961  1961 D ActivityThread: Remove activity client record, r= ActivityRecord{5f11fac token=android.os.BinderProxy@785e2a8 {com.android.settings/com.android.settings.Settings$HwSystemDashboardActivity}} token= android.os.BinderProxy@785e2a8
+05-12 13:10:35.030 13805 13845 I HwNetworkPolicyManager: getHwUidPolicy uid = 1000 policy = 0
+05-12 13:10:35.031  1961  1961 D ActivityThread: Remove activity client record, r= ActivityRecord{1ceb0fc token=android.os.BinderProxy@10f4904 {com.android.settings/com.android.settings.SubSettings}} token= android.os.BinderProxy@10f4904
+05-12 13:10:35.034  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 22 lines
+05-12 13:10:35.039  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 android.content.ContextWrapper.sendBroadcast:449 com.android.settings.HWSettings.onResume:266 android.app.Instrumentation.callActivityOnResume:1426 android.app.Activity.performResume:7663 
+05-12 13:10:35.049  1294  2204 I chatty  : uid=1000(system) Binder:1294_8 expire 32 lines
+05-12 13:10:35.051  1933  8399 I CommandQueue: updateBarBgColor
+05-12 13:10:35.051  1933  8399 D CommandQueue: CommandQueue, setBarBackgroundColor
+05-12 13:10:37.055  1933  1933 V ActivityThread: callActivityOnCreate
+05-12 13:10:37.066  1933  1933 D ActivityThread: add activity client record, r= ActivityRecord{f6b2ce8 token=android.os.BinderProxy@9cf444f {com.android.systemui/com.android.systemui.usb.HwUsbDebuggingActivity}} token= android.os.BinderProxy@9cf444f
+05-12 13:10:39.028  1933  1933 I HwUsbManagerEx: construction
+05-12 13:10:39.053  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1183 android.content.ContextWrapper.sendBroadcast:449 com.android.settings.HWSettings.onResume:266 android.app.Instrumentation.callActivityOnResume:1426 android.app.Activity.performResume:7663 
+05-12 13:10:39.073  1933  1933 D ActivityThread: Remove activity client record, r= ActivityRecord{f6b2ce8 token=android.os.BinderProxy@9cf444f {com.android.systemui/com.android.systemui.usb.HwUsbDebuggingActivity}} token= android.os.BinderProxy@9cf444f
+05-12 13:10:39.663  1294 14879 I chatty  : uid=1000(system) Binder:1294_1D expire 10 lines
+05-12 13:10:46.380  1294  1624 I chatty  : uid=1000(system) UEventObserver expire 12 lines
+05-12 13:10:46.487  1294  1546 I chatty  : uid=1000(system) PackageManager expire 13 lines
+05-12 13:10:47.237  1294 14966 I chatty  : uid=1000(system) Binder:1294_1F expire 21 lines
+05-12 13:10:47.244 13805 13805 I HwNetworkPolicyManager: removeHwUidPolicy uid = 10137 policy = -1 opPackageName = com.huawei.systemmanager
+05-12 13:10:47.255  1294  1509 I chatty  : uid=1000(system) ActivityManager expire 11 lines
+05-12 13:10:47.264  1961  1961 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.settings.applications.BlackListReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:4018 
+05-12 13:10:47.266  1294  9982 I chatty  : uid=1000(system) Binder:1294_15 expire 21 lines
+05-12 13:10:47.274 13805 13940 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.checkRarelyUsedApp:98 com.huawei.systemmanager.spacecleanner.receiver.SpaceCleanReceiver.doInBackground:46 java.lang.reflect.Method.invoke:-2 
+05-12 13:10:47.321 13941 13941 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.utils.AntiVirusTools.checkVirusForNewInstalledApk:728 com.huawei.systemmanager.antivirus.AntiVirusReceiver.onReceive:42 
+05-12 13:10:47.322  1294  1975 I chatty  : uid=1000(system) Binder:1294_5 expire 42 lines
+05-12 13:10:47.324 13805 13805 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.antivirus.AntiVirusService.handleInstalledApkCheck:391 com.huawei.systemmanager.antivirus.AntiVirusService.onStartCommand:296 android.app.ActivityThread.handleServiceArgs:4316 
+05-12 13:10:47.338 13941 13972 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1771 android.content.ContextWrapper.startService:664 com.huawei.systemmanager.rainbow.client.background.broadcast.SecurityBroadcastReceiver.doInBackground:103 java.lang.reflect.Method.invoke:-2 com.huawei.library.component.HsmIntentService$Work.reflectTargetReceiver:228 
+05-12 13:10:47.365  1294  1294 I chatty  : uid=1000 system_server expire 15 lines
+05-12 13:10:47.384 17918 18667 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1851 android.content.ContextWrapper.bindService:698 com.qihoo.qvssdk.AntivirusEngineImpl.install:85 com.qihoo.qvssdk.AntivirusProviderImpl.install:123 com.huawei.systemmanager.antivirus.newengine.AntivirusScanHelper$ScanTask.call:58 
+05-12 13:10:47.475  1294 18684 I chatty  : uid=1000 system_server expire 5 lines
+05-12 13:10:47.704   540   551 D vold    : Remounting 10137 as mode read
+05-12 13:10:47.781   540   551 D vold    : Remounting 10137 as mode write
+05-12 13:10:48.127  1294  2049 I chatty  : uid=1000(system) MultiTaskManage expire 11 lines
+05-12 13:10:48.146 18735 18735 D ActivityThread: Attach thread to application
+05-12 13:10:48.777  1294  1507 I chatty  : uid=1000(system) HwActivityManag expire 10 lines
+05-12 13:10:48.778  1294  1511 I chatty  : uid=1000(system) android.ui expire 63 lines
+05-12 13:10:48.787  1294  1607 I chatty  : uid=1000(system) android.anim expire 24 lines
+05-12 13:10:48.791  1294 13197 I chatty  : uid=1000(system) Binder:1294_1B expire 18 lines
+05-12 13:10:48.793  1294  1446 I chatty  : uid=1000(system) Binder:1294_1 expire 11 lines
+05-12 13:10:48.794 18735 18735 V ActivityThread: callActivityOnCreate
+05-12 13:10:48.802  1294 18773 I chatty  : uid=1000 system_server expire 1 line
+05-12 13:10:48.804 13805 13845 I HwNetworkPolicyManager: getHwUidPolicy uid = 10137 policy = 0
+05-12 13:10:48.811 18735 18735 D ActivityThread: add activity client record, r= ActivityRecord{ccf5a91 token=android.os.BinderProxy@c0286c3 {com.huawei.hisuite/com.huawei.hisuite.activity.MainActivity}} token= android.os.BinderProxy@c0286c3
+05-12 13:10:48.819 18774 18774 D ActivityThread: Attach thread to application
+05-12 13:10:48.830  2073  2073 I chatty  : uid=1000(system) com.huawei.systemserver expire 20 lines
+05-12 13:10:48.837  1294 18793 I chatty  : uid=1000 system_server expire 1 line
+05-12 13:10:49.235  2073  3899 I chatty  : uid=1000(system) Binder:2073_7 expire 12 lines
+05-12 13:10:50.094 18735 18735 V ActivityThread: callActivityOnCreate
+05-12 13:10:50.117 18735 18735 D ActivityThread: add activity client record, r= ActivityRecord{7e05754 token=android.os.BinderProxy@3cdef5 {com.huawei.hisuite/com.huawei.hisuite.activity.ConnectActivity}} token= android.os.BinderProxy@3cdef5
+05-12 13:10:50.123  1294  4388 I chatty  : uid=1000(system) Binder:1294_F expire 25 lines
+05-12 13:10:50.390 18735 18735 D ActivityThread: Remove activity client record, r= ActivityRecord{ccf5a91 token=android.os.BinderProxy@c0286c3 {com.huawei.hisuite/com.huawei.hisuite.activity.MainActivity}} token= android.os.BinderProxy@c0286c3
+05-12 13:10:52.679  1294  2618 I chatty  : uid=1000(system) Binder:1294_A expire 13 lines
+05-12 13:10:58.099 18887 18887 D ActivityThread: Attach thread to application
+05-12 13:10:58.211  4672 17638 W SettingsEx: SettingsEx.Systemex.getInt deprecated use Settings.System.getInt instead ;callers=com.huawei.recsys.util.SystemUtil.getNotificationUpdateMode:283 com.huawei.recsys.util.SystemUtil.isAllowUpdate:187 com.huawei.recsys.controller.notification.http.NotificationUpdateController.startNotificationUpdate:89 
+05-12 13:10:58.240  1294 18910 I chatty  : uid=1000 system_server expire 5 lines
+05-12 13:10:58.515  1294  1294 I chatty  : uid=1000 system_server expire 23 lines
+05-12 13:11:03.973  1294  1716 I chatty  : uid=1000(system) InputDispatcher expire 13 lines
+05-12 13:11:04.023  1294  1535 I chatty  : uid=1000(system) HwGameAssistant expire 10 lines
+05-12 13:11:04.049  1294  1505 I chatty  : uid=1000(system) android.bg expire 12 lines
+05-12 13:11:04.058 13805 13845 I HwNetworkPolicyManager: getHwUidPolicy uid = 10069 policy = 0
