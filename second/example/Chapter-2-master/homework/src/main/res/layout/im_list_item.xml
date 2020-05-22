@@ -9,7 +9,6 @@
     android:paddingBottom="10dp"
     tools:background="@color/colorBackground"
     android:background="@drawable/recycler_item_selector">
-
     <FrameLayout
         android:id="@+id/iv_avatar_header"
         android:layout_width="wrap_content"
@@ -41,7 +40,8 @@
         android:layout_toRightOf="@id/iv_avatar_header"
         android:textColor="#ffffff"
         android:textSize="15sp"
-        tools:text="AABBCC" />
+        tools:text="AABBCC"
+        android:layout_toEndOf="@id/iv_avatar_header" />
 
     <TextView
         android:id="@+id/tv_description"
@@ -49,12 +49,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_title"
         android:layout_alignLeft="@id/tv_title"
-        android:layout_marginTop="4dp"
-        android:singleLine="true"
+
         android:textColor="#4cffffff"
         android:textSize="14sp"
-        tools:text="123321123" />
-
+        tools:text="123321123"
+        android:layout_alignStart="@id/tv_title" />
     <TextView
         android:id="@+id/tv_time"
         android:layout_width="wrap_content"
@@ -62,5 +61,6 @@
         android:layout_alignParentRight="true"
         android:textColor="#4cffffff"
         android:textSize="12sp"
-        tools:text="5分钟前" />
+        tools:text="5分钟前"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
